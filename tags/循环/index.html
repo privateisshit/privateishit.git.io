@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>前言、入门程序、常量、变量 | Hexo</title>
+  <title>Tag: 循环 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言、入门程序、常量、变量二级制和十进制十进制数据转成二进制数据：使用除以2获取余数的方式 二进制数据转成十进制数据：使用8421编码的方式">
-<meta name="keywords" content="java,基础">
-<meta property="og:type" content="article">
-<meta property="og:title" content="前言、入门程序、常量、变量">
-<meta property="og:url" content="http://yoursite.com/2019/07/05/java基础day01/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/tags/循环/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言、入门程序、常量、变量二级制和十进制十进制数据转成二进制数据：使用除以2获取余数的方式 二进制数据转成十进制数据：使用8421编码的方式">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-06T00:47:47.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前言、入门程序、常量、变量">
-<meta name="twitter:description" content="前言、入门程序、常量、变量二级制和十进制十进制数据转成二进制数据：使用除以2获取余数的方式 二进制数据转成十进制数据：使用8421编码的方式">
+<meta name="twitter:title" content="Hexo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,210 +154,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java基础day01" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      前言、入门程序、常量、变量
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/07/06/java基础day03/" class="archive-article-date">
+  	<time datetime="2019-07-06T01:35:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/07/06/java基础day03/">流程控制语句</a>
     </h1>
   
 
-        
-        <a href="/2019/07/05/java基础day01/" class="archive-article-date">
-  	<time datetime="2019-07-04T16:35:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言、入门程序、常量、变量"><a href="#前言、入门程序、常量、变量" class="headerlink" title="前言、入门程序、常量、变量"></a>前言、入门程序、常量、变量</h1><h2 id="二级制和十进制"><a href="#二级制和十进制" class="headerlink" title="二级制和十进制"></a>二级制和十进制</h2><p>十进制数据转成二进制数据：使用除以2获取余数的方式</p>
-<p>二进制数据转成十进制数据：使用8421编码的方式</p>
-<a id="more"></a>
-
-<h2 id="JVM、JDK和JRE"><a href="#JVM、JDK和JRE" class="headerlink" title="JVM、JDK和JRE"></a>JVM、JDK和JRE</h2><p>JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的 运行环境，是Java 具吸引力的特性之一。我们编写的Java代码，都运行在 JVM 之上。</p>
-<p>JRE  (Java Runtime Environment) ：是Java程序的运行时环境，包含 JVM 和运行时所需要的 核心类库 。 </p>
-<p>JDK  (Java Development Kit)：是Java程序开发工具包，包含 JRE 和开发人员使用的工具。</p>
-<h2 id="HelloWorld入门程序"><a href="#HelloWorld入门程序" class="headerlink" title="HelloWorld入门程序"></a>HelloWorld入门程序</h2><p>Java程序开发三步骤：编写、编译、运行。</p>
-<p>新建文件，编写后缀为.java的代码</p>
-<p>在DOS命令行中，进入Java源文件的目录，使用 javac 命令进行编译。</p>
-<p>产生新的文件 HelloWorld.class ，该文件就是编译后的文件，是Java的可运行文件，称为字节码文件，有了字节码文件，就可以运行程序了。 </p>
-<p>之后用指令 java HelloWorld即可运行</p>
-<h2 id="入门程序说明"><a href="#入门程序说明" class="headerlink" title="入门程序说明"></a>入门程序说明</h2><p>编译：是指将我们编写的Java源文件翻译成JVM认识的class文件，在这个过程中， javac 编译器会检查我们 所写的程序是否有错误，有错误就会提示出来，如果没有错误就会编译成功。</p>
-<p>运行：是指将 class文件 交给JVM去运行，此时JVM就会去执行我们编写的程序了。</p>
-<p>main方法：称为主方法。写法是固定格式不可以更改。main方法是程序的入口点或起始点，无论我们编写多 少程序，JVM在运行的时候，都会从main方法这里开始执行。 </p>
-<p>注释：就是对代码的解释和说明。其目的是让人们能够更加轻松地了解代码。为代码添加注释，是十分必须 要的，它不影响程序的编译和运行。</p>
-<p>关键字：是指在程序中，Java已经定义好的单词，具有特殊含义。</p>
-<p>标识符：是指在程序中，我们自己定义内容。比如类的名字、方法的名字和变量的名字等等，都是标识符。</p>
-<p>命名规则： 硬性要求 </p>
-<ul>
-<li>标识符可以包含 英文字母26个(区分大小写) 、 0-9数字 、 $（美元符号）  和  _ （下划线） 。</li>
-<li>标识符不能以数字开头。 </li>
-<li>标识符不能是关键字。 </li>
-</ul>
-<p>命名规范： 软性建议 </p>
-<ul>
-<li>类名规范：首字母大写，后面每个单词首字母大写（大驼峰式）。</li>
-</ul>
-<ul>
-<li>方法名规范： 首字母小写，后面每个单词首字母大写（小驼峰式）。</li>
-<li>变量名规范：全部小写。 </li>
-</ul>
-<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><p>常量：是指在Java程序中固定不变的数据。 </p>
-<table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">含义</th>
-<th align="center">数量</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">整数常量</td>
-<td align="center">所有的整数</td>
-<td align="center">0，1，  567，  -9</td>
-</tr>
-<tr>
-<td align="center">小数常量</td>
-<td align="center">所有的小数</td>
-<td align="center">0.0，  -0.1，  2.55</td>
-</tr>
-<tr>
-<td align="center">字符常量</td>
-<td align="center">单引号引起来,只能写一个字符,必须有内容</td>
-<td align="center">‘a’ ， ‘ ‘，  ‘好’</td>
-</tr>
-<tr>
-<td align="center">字符串常量</td>
-<td align="center">双引号引起来,可以写多个字符,也可以不写</td>
-<td align="center">“A” ，”Hello” ，”你好” ，””</td>
-</tr>
-<tr>
-<td align="center">布尔常量</td>
-<td align="center">只有两个值（流程控制中讲解）</td>
-<td align="center">true ，  false</td>
-</tr>
-<tr>
-<td align="center">空常量</td>
-<td align="center">只有一个值（引用数据类型中讲解)</td>
-<td align="center">null</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public class ConstantDemo&#123;</span><br><span class="line">  public static void main(String args[])&#123;</span><br><span class="line">    System.out.println(123);</span><br><span class="line">    System.out.println(0.125);</span><br><span class="line">    System.out.println(`A`);</span><br><span class="line">    System.out.println(true);</span><br><span class="line">    System.out.println(&quot;你好java&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="变量和数据类型"><a href="#变量和数据类型" class="headerlink" title="变量和数据类型"></a>变量和数据类型</h2><h3 id="变量概述"><a href="#变量概述" class="headerlink" title="变量概述"></a>变量概述</h3><p>变量：常量是固定不变的数据，那么在程序中可以变化的量称为变量。</p>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>Java的数据类型分为两大类：</p>
-<ul>
-<li>基本数据类型：包括 整数 、 浮点数 、 字符 、 布尔 。 </li>
-<li>引用数据类型：包括 类 、 数组 、 接口 。 </li>
-</ul>
-<h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table>
-<thead>
-<tr>
-<th align="center">数据类型</th>
-<th align="center">关键字</th>
-<th align="center">内存占用</th>
-<th align="center">取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">字节型</td>
-<td align="center">byte</td>
-<td align="center">1个字节</td>
-<td align="center">-128~127</td>
-</tr>
-<tr>
-<td align="center">短整型</td>
-<td align="center">shrot</td>
-<td align="center">2个字节</td>
-<td align="center">-32768~32767</td>
-</tr>
-<tr>
-<td align="center">整型</td>
-<td align="center">int(默认)</td>
-<td align="center">4个字节</td>
-<td align="center">-231次方~2的31次方-1</td>
-</tr>
-<tr>
-<td align="center">长整型</td>
-<td align="center">long</td>
-<td align="center">8个字节</td>
-<td align="center">-2的63次方~2的63次方-1</td>
-</tr>
-<tr>
-<td align="center">单精度浮点数</td>
-<td align="center">float</td>
-<td align="center">4个字节</td>
-<td align="center">1.4013E-45~3.4028E+38</td>
-</tr>
-<tr>
-<td align="center">双精度浮点数</td>
-<td align="center">double(默认)</td>
-<td align="center">8个字节</td>
-<td align="center">4.9E-324~1.7977E+308</td>
-</tr>
-<tr>
-<td align="center">字符型</td>
-<td align="center">char</td>
-<td align="center">2个字节</td>
-<td align="center">0-65535</td>
-</tr>
-<tr>
-<td align="center">布尔类型</td>
-<td align="center">boolean</td>
-<td align="center">1个字节</td>
-<td align="center">true，false</td>
-</tr>
-</tbody></table>
-<h2 id="变量的定义"><a href="#变量的定义" class="headerlink" title="变量的定义"></a>变量的定义</h2><p>变量定义的格式包括三个要素： 数据类型 、 变量名 、 数据值 。 </p>
-<h4 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h4><p>数据类型 变量名 = 数据值;</p>
-<p>long类型：建议数据后加L表示。 ﬂoat类型：建议数据后加F表示。 </p>
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
-<li>变量名称：在同一个大括号范围内，变量的名字不可以相同。</li>
-<li>变量赋值：定义的变量，不赋值不能使用。</li>
-</ul>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>分享不易，请我喝杯咖啡吧~<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -374,143 +195,31 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">判断</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">循环</a>
+        		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/05/java基础day01/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/07/06/java基础day02/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          数据类型转换、运算符、方法入门
-        
-      </div>
-    </a>
   
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言、入门程序、常量、变量"><span class="toc-number">1.</span> <span class="toc-text">前言、入门程序、常量、变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#二级制和十进制"><span class="toc-number">1.1.</span> <span class="toc-text">二级制和十进制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM、JDK和JRE"><span class="toc-number">1.2.</span> <span class="toc-text">JVM、JDK和JRE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HelloWorld入门程序"><span class="toc-number">1.3.</span> <span class="toc-text">HelloWorld入门程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#入门程序说明"><span class="toc-number">1.4.</span> <span class="toc-text">入门程序说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常量"><span class="toc-number">1.5.</span> <span class="toc-text">常量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量和数据类型"><span class="toc-number">1.6.</span> <span class="toc-text">变量和数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量概述"><span class="toc-number">1.6.1.</span> <span class="toc-text">变量概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-number">1.6.2.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本数据类型"><span class="toc-number">1.6.2.1.</span> <span class="toc-text">基本数据类型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量的定义"><span class="toc-number">1.7.</span> <span class="toc-text">变量的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#格式"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项"><span class="toc-number">1.7.0.2.</span> <span class="toc-text">注意事项</span></a></li></ol></li></ol></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/2019/07/05/java基础day01/",
-  owner: 'privateisshit',
-  repo: 'privateisshit.github.io',
-  oauth: {
-    client_id: '7950dd9529882a16b83e',
-    client_secret: 'eff7357682102179e3033b0d6dfed954b2aa2ae4',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
-  
+    
 
 
           </div>
@@ -535,9 +244,9 @@ gitment.render('gitment-ctn')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
