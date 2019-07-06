@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>数组 | Hexo</title>
+  <title>前言、入门程序、常量、变量 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="数组数组的定义和访问容器概述容器概念容器：是将多个数据存储到一起，每个数据称为该容器的元素。 数组概念数组概念： 数组就是存储数据长度固定的容器，保证多个数据的数据类型要一致。">
-<meta name="keywords" content="java,基础,数组">
+  <meta name="description" content="前言、入门程序、常量、变量二级制和十进制十进制数据转成二进制数据：使用除以2获取余数的方式 二进制数据转成十进制数据：使用8421编码的方式">
+<meta name="keywords" content="java,基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组">
-<meta property="og:url" content="http://yoursite.com/2019/07/06/java基础day05/index.html">
+<meta property="og:title" content="前言、入门程序、常量、变量">
+<meta property="og:url" content="http://yoursite.com/2019/01/05/java基础day01/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="数组数组的定义和访问容器概述容器概念容器：是将多个数据存储到一起，每个数据称为该容器的元素。 数组概念数组概念： 数组就是存储数据长度固定的容器，保证多个数据的数据类型要一致。">
+<meta property="og:description" content="前言、入门程序、常量、变量二级制和十进制十进制数据转成二进制数据：使用除以2获取余数的方式 二进制数据转成十进制数据：使用8421编码的方式">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-06T06:46:24.000Z">
+<meta property="og:updated_time" content="2019-07-06T08:28:28.750Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数组">
-<meta name="twitter:description" content="数组数组的定义和访问容器概述容器概念容器：是将多个数据存储到一起，每个数据称为该容器的元素。 数组概念数组概念： 数组就是存储数据长度固定的容器，保证多个数据的数据类型要一致。">
+<meta name="twitter:title" content="前言、入门程序、常量、变量">
+<meta name="twitter:description" content="前言、入门程序、常量、变量二级制和十进制十进制数据转成二进制数据：使用除以2获取余数的方式 二进制数据转成十进制数据：使用8421编码的方式">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,143 +159,171 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java基础day05" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java基础day01" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      数组
+      前言、入门程序、常量、变量
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day05/" class="archive-article-date">
-  	<time datetime="2019-07-06T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/01/05/java基础day01/" class="archive-article-date">
+  	<time datetime="2019-01-04T16:35:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="数组的定义和访问"><a href="#数组的定义和访问" class="headerlink" title="数组的定义和访问"></a>数组的定义和访问</h2><h3 id="容器概述"><a href="#容器概述" class="headerlink" title="容器概述"></a>容器概述</h3><h4 id="容器概念"><a href="#容器概念" class="headerlink" title="容器概念"></a>容器概念</h4><p>容器：是将多个数据存储到一起，每个数据称为该容器的元素。</p>
-<h4 id="数组概念"><a href="#数组概念" class="headerlink" title="数组概念"></a>数组概念</h4><p>数组概念： 数组就是存储数据长度固定的容器，保证多个数据的数据类型要一致。 </p>
+        <h1 id="前言、入门程序、常量、变量"><a href="#前言、入门程序、常量、变量" class="headerlink" title="前言、入门程序、常量、变量"></a>前言、入门程序、常量、变量</h1><h2 id="二级制和十进制"><a href="#二级制和十进制" class="headerlink" title="二级制和十进制"></a>二级制和十进制</h2><p>十进制数据转成二进制数据：使用除以2获取余数的方式</p>
+<p>二进制数据转成十进制数据：使用8421编码的方式</p>
 <a id="more"></a>
 
-<h4 id="数组的定义"><a href="#数组的定义" class="headerlink" title="数组的定义"></a>数组的定义</h4><ul>
-<li><p>方法一格式：</p>
-<p>数组存储的数据类型[] 数组名字 = new 数组存储的数据类型[长度];</p>
-</li>
-<li><p>数组定义格式详解： </p>
+<h2 id="JVM、JDK和JRE"><a href="#JVM、JDK和JRE" class="headerlink" title="JVM、JDK和JRE"></a>JVM、JDK和JRE</h2><p>JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的 运行环境，是Java 具吸引力的特性之一。我们编写的Java代码，都运行在 JVM 之上。</p>
+<p>JRE  (Java Runtime Environment) ：是Java程序的运行时环境，包含 JVM 和运行时所需要的 核心类库 。 </p>
+<p>JDK  (Java Development Kit)：是Java程序开发工具包，包含 JRE 和开发人员使用的工具。</p>
+<h2 id="HelloWorld入门程序"><a href="#HelloWorld入门程序" class="headerlink" title="HelloWorld入门程序"></a>HelloWorld入门程序</h2><p>Java程序开发三步骤：编写、编译、运行。</p>
+<p>新建文件，编写后缀为.java的代码</p>
+<p>在DOS命令行中，进入Java源文件的目录，使用 javac 命令进行编译。</p>
+<p>产生新的文件 HelloWorld.class ，该文件就是编译后的文件，是Java的可运行文件，称为字节码文件，有了字节码文件，就可以运行程序了。 </p>
+<p>之后用指令 java HelloWorld即可运行</p>
+<h2 id="入门程序说明"><a href="#入门程序说明" class="headerlink" title="入门程序说明"></a>入门程序说明</h2><p>编译：是指将我们编写的Java源文件翻译成JVM认识的class文件，在这个过程中， javac 编译器会检查我们 所写的程序是否有错误，有错误就会提示出来，如果没有错误就会编译成功。</p>
+<p>运行：是指将 class文件 交给JVM去运行，此时JVM就会去执行我们编写的程序了。</p>
+<p>main方法：称为主方法。写法是固定格式不可以更改。main方法是程序的入口点或起始点，无论我们编写多 少程序，JVM在运行的时候，都会从main方法这里开始执行。 </p>
+<p>注释：就是对代码的解释和说明。其目的是让人们能够更加轻松地了解代码。为代码添加注释，是十分必须 要的，它不影响程序的编译和运行。</p>
+<p>关键字：是指在程序中，Java已经定义好的单词，具有特殊含义。</p>
+<p>标识符：是指在程序中，我们自己定义内容。比如类的名字、方法的名字和变量的名字等等，都是标识符。</p>
+<p>命名规则： 硬性要求 </p>
 <ul>
-<li>数组存储的数据类型： 创建的数组容器可以存储什么数据类型。 </li>
-<li>[] : 表示数组。 </li>
-<li>数组名字：为定义的数组起个变量名，满足标识符规范，可以使用名字操作数组。 </li>
-<li>new：关键字，创建数组使用的关键字。 </li>
-<li>数组存储的数据类型： 创建的数组容器可以存储什么数据类型。 </li>
-<li>[长度]：数组的长度，表示数组容器中可以存储多少个元素。 </li>
-<li>注意：数组有定长特性，长度一旦指定，不可更改。</li>
+<li>标识符可以包含 英文字母26个(区分大小写) 、 0-9数字 、 $（美元符号）  和  _ （下划线） 。</li>
+<li>标识符不能以数字开头。 </li>
+<li>标识符不能是关键字。 </li>
 </ul>
-</li>
-<li><p>举例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] arr = new int[3];</span><br></pre></td></tr></table></figure>
-
-<p>​</p>
-</li>
-<li><p>方法二格式：</p>
-<p>数据类型[] 数组名 = new 数据类型[]{元素1,元素2,元素3…};</p>
-</li>
-<li><p>举例</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] arr = new int[]&#123;1,2,3,4,5&#125;;</span><br></pre></td></tr></table></figure>
-
+<p>命名规范： 软性建议 </p>
 <ul>
-<li><p>方法三格式：</p>
-<p>数据类型[] 数组名 = {元素1,元素2,元素3…};</p>
-</li>
-<li><p>举例</p>
-</li>
+<li>类名规范：首字母大写，后面每个单词首字母大写（大驼峰式）。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] arr = &#123;1,2,3,4,5&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="数组的访问"><a href="#数组的访问" class="headerlink" title="数组的访问"></a>数组的访问</h4><ul>
-<li>索引： 每一个存储到数组的元素，都会自动的拥有一个编号，从0开始，这个自动编号称为数组索引 (index)，可以通过数组的索引访问到数组中的元素。 </li>
-<li>格式：数组名[索引]</li>
-<li>数组的长度属性： 每个数组都具有长度，而且是固定的，Java中赋予了数组的一个属性，可以获取到数组的 长度，语句为： 数组名.length ，属性length的执行结果是数组的长度，int类型结果。由次可以推断出，数 组的最大索引值为 数组名.length-1 。</li>
-<li>索引访问数组中的元素： <ul>
-<li>数组名[索引]=数值，为数组中的元素赋值 </li>
-<li>变量=数组名[索引]，获取出数组中的元素</li>
+<ul>
+<li>方法名规范： 首字母小写，后面每个单词首字母大写（小驼峰式）。</li>
+<li>变量名规范：全部小写。 </li>
 </ul>
-</li>
-</ul>
-<h2 id="数组原理内存图"><a href="#数组原理内存图" class="headerlink" title="数组原理内存图"></a>数组原理内存图</h2><h4 id="内存概述"><a href="#内存概述" class="headerlink" title="内存概述"></a>内存概述</h4><p>内存是计算机中的重要原件，临时存储区域，作用是运行程序。我们编写的程序是存放在硬盘中的，在硬盘中的程 序是不会运行的，必须放进内存中才能运行，运行完毕后会清空内存。<br>Java虚拟机要运行程序，必须要对内存进行空间的分配和管理。 </p>
-<h4 id="java虚拟机的内存划分"><a href="#java虚拟机的内存划分" class="headerlink" title="java虚拟机的内存划分"></a>java虚拟机的内存划分</h4><p>为了提高运算效率，就对空间进行了不同区域的划分，因为每一片区域都有特定的处理数据方式和内存管理方式。</p>
-<p>JVM的内存划分：</p>
+<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><p>常量：是指在Java程序中固定不变的数据。 </p>
 <table>
 <thead>
 <tr>
-<th>区域名称</th>
-<th>作用</th>
+<th align="center">类型</th>
+<th align="center">含义</th>
+<th align="center">数量</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>寄存器</td>
-<td>给CPU使用，和我们开发无关.</td>
+<td align="center">整数常量</td>
+<td align="center">所有的整数</td>
+<td align="center">0，1，  567，  -9</td>
 </tr>
 <tr>
-<td>本地方法栈</td>
-<td>JVM在使用操作系统功能的时候使用，和我们开发无关。</td>
+<td align="center">小数常量</td>
+<td align="center">所有的小数</td>
+<td align="center">0.0，  -0.1，  2.55</td>
 </tr>
 <tr>
-<td>方法区</td>
-<td>存储可以运行的class文件。</td>
+<td align="center">字符常量</td>
+<td align="center">单引号引起来,只能写一个字符,必须有内容</td>
+<td align="center">‘a’ ， ‘ ‘，  ‘好’</td>
 </tr>
 <tr>
-<td>堆内存</td>
-<td>存储对象或者数组，new来创建的，都存储在堆内存。</td>
+<td align="center">字符串常量</td>
+<td align="center">双引号引起来,可以写多个字符,也可以不写</td>
+<td align="center">“A” ，”Hello” ，”你好” ，””</td>
 </tr>
 <tr>
-<td>方法栈</td>
-<td>方法运行时使用的内存，比如main方法运行，进入方法栈中执行。</td>
+<td align="center">布尔常量</td>
+<td align="center">只有两个值（流程控制中讲解）</td>
+<td align="center">true ，  false</td>
+</tr>
+<tr>
+<td align="center">空常量</td>
+<td align="center">只有一个值（引用数据类型中讲解)</td>
+<td align="center">null</td>
 </tr>
 </tbody></table>
-<h4 id="数组在内存中的存储"><a href="#数组在内存中的存储" class="headerlink" title="数组在内存中的存储"></a>数组在内存中的存储</h4><p>I@5f150435是数组在内存中的地址。new出来的内容，都是在堆 内存中存储的，而方法中的变量arr保存的是数组的地址。 </p>
-<p>输出arr[0]，就会输出arr保存的内存地址中数组中0索引上的元素</p>
-<h2 id="数组的常见操作"><a href="#数组的常见操作" class="headerlink" title="数组的常见操作"></a>数组的常见操作</h2><h4 id="数组越界异常"><a href="#数组越界异常" class="headerlink" title="数组越界异常"></a>数组越界异常</h4><p>创建数组，赋值3个元素，数组的索引就是0，1，2，没有3索引，因此我们不能访问数组中不存在的索引，程序运 行后，将会抛出 ArrayIndexOutOfBoundsException 数组越界异常。在开发中，数组的越界异常是不能出现的，一 旦出现了，就必须要修改我们编写的代码。</p>
-<h4 id="数组空指针异常"><a href="#数组空指针异常" class="headerlink" title="数组空指针异常"></a>数组空指针异常</h4><p>arr = null 这行代码，意味着变量arr将不会在保存数组的内存地址，也就不允许再操作数组了，因此运行的时候 会抛出 NullPointerException 空指针异常。在开发中，数组的越界异常是不能出现的，一旦出现了，就必须要修 改我们编写的代码。</p>
-<h4 id="数组遍历"><a href="#数组遍历" class="headerlink" title="数组遍历"></a>数组遍历</h4><p>数组遍历： 就是将数组中的每个元素分别获取出来，就是遍历。遍历也是数组操作中的基石。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;     </span><br><span class="line">	int[] arr = &#123; 1, 2, 3, 4, 5 &#125;;     </span><br><span class="line">	for (int i = 0; i &lt; arr.length; i++) &#123;       </span><br><span class="line">	System.out.println(arr[i]);     </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public class ConstantDemo&#123;</span><br><span class="line">  public static void main(String args[])&#123;</span><br><span class="line">    System.out.println(123);</span><br><span class="line">    System.out.println(0.125);</span><br><span class="line">    System.out.println(`A`);</span><br><span class="line">    System.out.println(true);</span><br><span class="line">    System.out.println(&quot;你好java&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="数组获取最大值元素"><a href="#数组获取最大值元素" class="headerlink" title="数组获取最大值元素"></a>数组获取最大值元素</h4><ul>
-<li>最大值获取：从数组的所有元素中找出最大值。 <ul>
-<li>实现思路： 定义变量，保存数组0索引上的元素 </li>
-<li>遍历数组，获取出数组中的每个元素 </li>
-<li>将遍历到的元素和保存数组0索引上值的变量进行比较 </li>
-<li>如果数组元素的值大于了变量的值，变量记录住新的值 </li>
-<li>数组循环遍历结束，变量保存的就是数组中的最大值</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;     </span><br><span class="line">	int[] arr = &#123; 5, 15, 2000, 10000, 100, 4000 &#125;;     //定义变量，保存数组中0索引的元素     int max = arr[0];     //遍历数组，取出每个元素     </span><br><span class="line">	for (int i = 0; i &lt; arr.length; i++) &#123;       </span><br><span class="line">	//遍历到的元素和变量max比较       </span><br><span class="line">	//如果数组元素大于max       </span><br><span class="line">		if (arr[i] &gt; max) &#123;         </span><br><span class="line">		//max记录住大值         </span><br><span class="line">		max = arr[i];       </span><br><span class="line">		&#125;     </span><br><span class="line">	&#125;     </span><br><span class="line">	System.out.println(&quot;数组最大值是： &quot; + max); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="数组反转"><a href="#数组反转" class="headerlink" title="数组反转"></a>数组反转</h4><p>数组的反转： 数组中的元素颠倒顺序，例如原始数组为1,2,3,4,5，反转后的数组为5,4,3,2,1 </p>
+<h2 id="变量和数据类型"><a href="#变量和数据类型" class="headerlink" title="变量和数据类型"></a>变量和数据类型</h2><h3 id="变量概述"><a href="#变量概述" class="headerlink" title="变量概述"></a>变量概述</h3><p>变量：常量是固定不变的数据，那么在程序中可以变化的量称为变量。</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>Java的数据类型分为两大类：</p>
 <ul>
-<li>实现思想：数组最远端的元素互换位置。 <ul>
-<li>实现反转，就需要将数组最远端元素位置交换 </li>
-<li>定义两个变量，保存数组的最小索引和最大索引 </li>
-<li>两个索引上的元素交换位置 </li>
-<li>最小索引++，最大索引–，再次交换位置 </li>
-<li>最小索引超过了最大索引，数组反转操作结束</li>
+<li>基本数据类型：包括 整数 、 浮点数 、 字符 、 布尔 。 </li>
+<li>引用数据类型：包括 类 、 数组 、 接口 。 </li>
 </ul>
-</li>
+<h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th align="center">关键字</th>
+<th align="center">内存占用</th>
+<th align="center">取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">字节型</td>
+<td align="center">byte</td>
+<td align="center">1个字节</td>
+<td align="center">-128~127</td>
+</tr>
+<tr>
+<td align="center">短整型</td>
+<td align="center">shrot</td>
+<td align="center">2个字节</td>
+<td align="center">-32768~32767</td>
+</tr>
+<tr>
+<td align="center">整型</td>
+<td align="center">int(默认)</td>
+<td align="center">4个字节</td>
+<td align="center">-231次方~2的31次方-1</td>
+</tr>
+<tr>
+<td align="center">长整型</td>
+<td align="center">long</td>
+<td align="center">8个字节</td>
+<td align="center">-2的63次方~2的63次方-1</td>
+</tr>
+<tr>
+<td align="center">单精度浮点数</td>
+<td align="center">float</td>
+<td align="center">4个字节</td>
+<td align="center">1.4013E-45~3.4028E+38</td>
+</tr>
+<tr>
+<td align="center">双精度浮点数</td>
+<td align="center">double(默认)</td>
+<td align="center">8个字节</td>
+<td align="center">4.9E-324~1.7977E+308</td>
+</tr>
+<tr>
+<td align="center">字符型</td>
+<td align="center">char</td>
+<td align="center">2个字节</td>
+<td align="center">0-65535</td>
+</tr>
+<tr>
+<td align="center">布尔类型</td>
+<td align="center">boolean</td>
+<td align="center">1个字节</td>
+<td align="center">true，false</td>
+</tr>
+</tbody></table>
+<h2 id="变量的定义"><a href="#变量的定义" class="headerlink" title="变量的定义"></a>变量的定义</h2><p>变量定义的格式包括三个要素： 数据类型 、 变量名 、 数据值 。 </p>
+<h4 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h4><p>数据类型 变量名 = 数据值;</p>
+<p>long类型：建议数据后加L表示。 ﬂoat类型：建议数据后加F表示。 </p>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>变量名称：在同一个大括号范围内，变量的名字不可以相同。</li>
+<li>变量赋值：定义的变量，不赋值不能使用。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;     </span><br><span class="line">	int[] arr = &#123; 1, 2, 3, 4, 5 &#125;;     </span><br><span class="line">	/*       循环中定义变量min=0最小索引       </span><br><span class="line">			max=arr.length‐1最大索引       </span><br><span class="line">			min++,max‐      </span><br><span class="line">	*/     </span><br><span class="line">	for (int min = 0, max = arr.length ‐ 1; min &lt;= max; min++, max‐‐) &#123;</span><br><span class="line">    //利用第三方变量完成数组中的元素交换       </span><br><span class="line">    int temp = arr[min];       </span><br><span class="line">    arr[min] = arr[max];       </span><br><span class="line">    arr[max] = temp;    </span><br><span class="line">    &#125;     </span><br><span class="line">    // 反转后，遍历数组     </span><br><span class="line">    for (int i = 0; i &lt; arr.length; i++) &#123;       </span><br><span class="line">    System.out.println(arr[i]);     </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="数组作为方法参数和返回值"><a href="#数组作为方法参数和返回值" class="headerlink" title="数组作为方法参数和返回值"></a>数组作为方法参数和返回值</h2><p>数组作为方法参数传递，传递的参数是数组内存的地址。</p>
-<p>数组作为方法的返回值，返回的是数组的内存地址</p>
-<p>方法的参数为基本类型时,传递的是数据值. 方法的参数为引用类型时,传递的是地址值.</p>
 
       
 
@@ -345,10 +373,6 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
         		</li>
       		
 		</ul>
@@ -404,7 +428,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/06/java基础day05/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/05/java基础day01/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -418,11 +442,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2019/07/06/java基础day06/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">类与对象、封装、构造方法</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2019/01/06/java基础day02/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          数据类型转换、运算符、方法入门
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -447,7 +475,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数组"><span class="toc-number">1.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数组的定义和访问"><span class="toc-number">1.1.</span> <span class="toc-text">数组的定义和访问</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#容器概述"><span class="toc-number">1.1.1.</span> <span class="toc-text">容器概述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#容器概念"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">容器概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组概念"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">数组概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组的定义"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">数组的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组的访问"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">数组的访问</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组原理内存图"><span class="toc-number">1.2.</span> <span class="toc-text">数组原理内存图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#内存概述"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">内存概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#java虚拟机的内存划分"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">java虚拟机的内存划分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组在内存中的存储"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">数组在内存中的存储</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组的常见操作"><span class="toc-number">1.3.</span> <span class="toc-text">数组的常见操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数组越界异常"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">数组越界异常</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组空指针异常"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">数组空指针异常</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组遍历"><span class="toc-number">1.3.0.3.</span> <span class="toc-text">数组遍历</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组获取最大值元素"><span class="toc-number">1.3.0.4.</span> <span class="toc-text">数组获取最大值元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组反转"><span class="toc-number">1.3.0.5.</span> <span class="toc-text">数组反转</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组作为方法参数和返回值"><span class="toc-number">1.4.</span> <span class="toc-text">数组作为方法参数和返回值</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言、入门程序、常量、变量"><span class="toc-number">1.</span> <span class="toc-text">前言、入门程序、常量、变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#二级制和十进制"><span class="toc-number">1.1.</span> <span class="toc-text">二级制和十进制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM、JDK和JRE"><span class="toc-number">1.2.</span> <span class="toc-text">JVM、JDK和JRE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HelloWorld入门程序"><span class="toc-number">1.3.</span> <span class="toc-text">HelloWorld入门程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#入门程序说明"><span class="toc-number">1.4.</span> <span class="toc-text">入门程序说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常量"><span class="toc-number">1.5.</span> <span class="toc-text">常量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量和数据类型"><span class="toc-number">1.6.</span> <span class="toc-text">变量和数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量概述"><span class="toc-number">1.6.1.</span> <span class="toc-text">变量概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-number">1.6.2.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本数据类型"><span class="toc-number">1.6.2.1.</span> <span class="toc-text">基本数据类型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量的定义"><span class="toc-number">1.7.</span> <span class="toc-text">变量的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#格式"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项"><span class="toc-number">1.7.0.2.</span> <span class="toc-text">注意事项</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -472,7 +500,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2019/07/06/java基础day05/",
+  id: "http://yoursite.com/2019/01/05/java基础day01/",
   owner: 'privateisshit',
   repo: 'privateisshit.github.io',
   oauth: {

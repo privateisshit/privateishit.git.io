@@ -156,30 +156,45 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-java基础day05" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-java基础day07" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/06/java基础day05/">数组</a>
+      <a class="article-title" href="/2019/01/14/java基础day07/">Scanner类、Random类、ArrayList 类</a>
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day05/" class="archive-article-date">
-  	<time datetime="2019-07-06T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/01/14/java基础day07/" class="archive-article-date">
+  	<time datetime="2019-01-14T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="数组的定义和访问"><a href="#数组的定义和访问" class="headerlink" title="数组的定义和访问"></a>数组的定义和访问</h2><h3 id="容器概述"><a href="#容器概述" class="headerlink" title="容器概述"></a>容器概述</h3><h4 id="容器概念"><a href="#容器概念" class="headerlink" title="容器概念"></a>容器概念</h4><p>容器：是将多个数据存储到一起，每个数据称为该容器的元素。</p>
-<h4 id="数组概念"><a href="#数组概念" class="headerlink" title="数组概念"></a>数组概念</h4><p>数组概念： 数组就是存储数据长度固定的容器，保证多个数据的数据类型要一致。 </p>
+        <h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>API(Application Programming Interface)，应用程序编程接口。Java API是一本程序员的 字典 ，是JDK中提供给 我们使用的类的说明文档。这些类将底层的代码实现封装了起来，我们不需要关心这些类是如何实现的，只需要学 习这些类如何使用即可。所以我们可以通过查询API的方式，来学习Java提供的类，并得知如何使用它们。 </p>
+<h4 id="API使用步骤"><a href="#API使用步骤" class="headerlink" title="API使用步骤"></a>API使用步骤</h4><ol>
+<li><p>打开帮助文档。 </p>
+</li>
+<li><p>点击显示，找到索引，看到输入框。 </p>
+</li>
+<li><p>你要找谁？在输入框里输入，然后回车。 </p>
+</li>
+<li><p>看包。java.lang下的类不需要导包，其他需要。 </p>
+</li>
+<li><p>看类的解释和说明。 </p>
+</li>
+<li><p>学习构造方法。</p>
+</li>
+<li><p>使用成员方法。 </p>
+</li>
+</ol>
         
-          <a class="article-more-a" href="/2019/07/06/java基础day05/#more">more >></a>
+          <a class="article-more-a" href="/2019/01/14/java基础day07/#more">more >></a>
         
       
 
@@ -201,7 +216,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">封装</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">API</a>
         		</li>
       		
 		</ul>
@@ -211,7 +230,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/06/java基础day05/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/14/java基础day07/">展开全文 >></a>
         </p>
       
 
@@ -248,13 +267,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/06/java基础day06/">类与对象、封装、构造方法</a>
+      <a class="article-title" href="/2019/01/12/java基础day06/">类与对象、封装、构造方法</a>
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day06/" class="archive-article-date">
-  	<time datetime="2019-07-06T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/01/12/java基础day06/" class="archive-article-date">
+  	<time datetime="2019-01-12T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-12</time>
 </a>
         
       </header>
@@ -264,7 +283,7 @@
         <h2 id="面向对象思想"><a href="#面向对象思想" class="headerlink" title="面向对象思想"></a>面向对象思想</h2><h4 id="面向对象思想概述"><a href="#面向对象思想概述" class="headerlink" title="面向对象思想概述"></a>面向对象思想概述</h4><p>Java语言是一种面向对象的程序设计语言，而面向对象思想是一种程序设计思想，我们在面向对象思想的指引下， 使用Java语言去设计、开发计算机程序。 这里的对象泛指现实中一切事物，每种事物都具备自己的属性和行为。面 向对象思想就是在计算机程序设计过程中，参照现实中事物，将事物的属性特征、行为特征抽象出来，描述成计算 机事件的设计思想。 它区别于面向过程思想，强调的是通过调用对象的行为来实现功能，而不是自己一步一步的去 操作实现。 </p>
 <p>特点：面向对象思想是一种更符合我们思考习惯的思想，它可以将复杂的事情简单化，并将我们从执行者变成了指挥者。 面向对象的语言中，包含了三大基本特征，即封装、继承和多态。</p>
         
-          <a class="article-more-a" href="/2019/07/06/java基础day06/#more">more >></a>
+          <a class="article-more-a" href="/2019/01/12/java基础day06/#more">more >></a>
         
       
 
@@ -300,7 +319,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/06/java基础day06/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/12/java基础day06/">展开全文 >></a>
         </p>
       
 
@@ -330,45 +349,30 @@
 
 
   
-    <article id="post-java基础day07" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-java基础day05" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/06/java基础day07/">Scanner类、Random类、ArrayList 类</a>
+      <a class="article-title" href="/2019/01/10/java基础day05/">数组</a>
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day07/" class="archive-article-date">
-  	<time datetime="2019-07-06T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/01/10/java基础day05/" class="archive-article-date">
+  	<time datetime="2019-01-10T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>API(Application Programming Interface)，应用程序编程接口。Java API是一本程序员的 字典 ，是JDK中提供给 我们使用的类的说明文档。这些类将底层的代码实现封装了起来，我们不需要关心这些类是如何实现的，只需要学 习这些类如何使用即可。所以我们可以通过查询API的方式，来学习Java提供的类，并得知如何使用它们。 </p>
-<h4 id="API使用步骤"><a href="#API使用步骤" class="headerlink" title="API使用步骤"></a>API使用步骤</h4><ol>
-<li><p>打开帮助文档。 </p>
-</li>
-<li><p>点击显示，找到索引，看到输入框。 </p>
-</li>
-<li><p>你要找谁？在输入框里输入，然后回车。 </p>
-</li>
-<li><p>看包。java.lang下的类不需要导包，其他需要。 </p>
-</li>
-<li><p>看类的解释和说明。 </p>
-</li>
-<li><p>学习构造方法。</p>
-</li>
-<li><p>使用成员方法。 </p>
-</li>
-</ol>
+        <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="数组的定义和访问"><a href="#数组的定义和访问" class="headerlink" title="数组的定义和访问"></a>数组的定义和访问</h2><h3 id="容器概述"><a href="#容器概述" class="headerlink" title="容器概述"></a>容器概述</h3><h4 id="容器概念"><a href="#容器概念" class="headerlink" title="容器概念"></a>容器概念</h4><p>容器：是将多个数据存储到一起，每个数据称为该容器的元素。</p>
+<h4 id="数组概念"><a href="#数组概念" class="headerlink" title="数组概念"></a>数组概念</h4><p>数组概念： 数组就是存储数据长度固定的容器，保证多个数据的数据类型要一致。 </p>
         
-          <a class="article-more-a" href="/2019/07/06/java基础day07/#more">more >></a>
+          <a class="article-more-a" href="/2019/01/10/java基础day05/#more">more >></a>
         
       
 
@@ -390,11 +394,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">封装</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">API</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
         		</li>
       		
 		</ul>
@@ -404,7 +404,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/06/java基础day07/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/10/java基础day05/">展开全文 >></a>
         </p>
       
 
@@ -441,13 +441,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/06/java基础day04/">方法</a>
+      <a class="article-title" href="/2019/01/09/java基础day04/">方法</a>
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day04/" class="archive-article-date">
-  	<time datetime="2019-07-06T02:34:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/01/09/java基础day04/" class="archive-article-date">
+  	<time datetime="2019-01-09T02:34:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-09</time>
 </a>
         
       </header>
@@ -456,7 +456,7 @@
       
         <h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="定义方法的格式详解"><a href="#定义方法的格式详解" class="headerlink" title="定义方法的格式详解"></a>定义方法的格式详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名(参数列表)&#123;     </span><br><span class="line">	//代码省略...     </span><br><span class="line">	return 结果; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2019/07/06/java基础day04/#more">more >></a>
+          <a class="article-more-a" href="/2019/01/09/java基础day04/#more">more >></a>
         
       
 
@@ -484,7 +484,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/06/java基础day04/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/09/java基础day04/">展开全文 >></a>
         </p>
       
 
@@ -521,13 +521,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/06/java基础day03/">流程控制语句</a>
+      <a class="article-title" href="/2019/01/08/java基础day03/">流程控制语句</a>
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day03/" class="archive-article-date">
-  	<time datetime="2019-07-06T01:35:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/01/08/java基础day03/" class="archive-article-date">
+  	<time datetime="2019-01-08T01:35:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-08</time>
 </a>
         
       </header>
@@ -536,7 +536,7 @@
       
         <h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><h2 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>在一个程序执行的过程中，各条语句的执行顺序对程序的结果是有直接影响的。也就是说，程序的流程对运行结果 有直接的影响。所以，我们必须清楚每条语句的执行流程。而且，很多时候我们要通过控制语句的执行顺序来实现 我们要完成的功能。</p>
         
-          <a class="article-more-a" href="/2019/07/06/java基础day03/#more">more >></a>
+          <a class="article-more-a" href="/2019/01/08/java基础day03/#more">more >></a>
         
       
 
@@ -572,7 +572,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/06/java基础day03/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/08/java基础day03/">展开全文 >></a>
         </p>
       
 
@@ -609,13 +609,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/06/java基础day02/">数据类型转换、运算符、方法入门</a>
+      <a class="article-title" href="/2019/01/06/java基础day02/">数据类型转换、运算符、方法入门</a>
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day02/" class="archive-article-date">
-  	<time datetime="2019-07-06T00:48:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/01/06/java基础day02/" class="archive-article-date">
+  	<time datetime="2019-01-06T00:48:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-06</time>
 </a>
         
       </header>
@@ -629,7 +629,7 @@
 <h3 id="转换原理"><a href="#转换原理" class="headerlink" title="转换原理"></a>转换原理</h3><p>byte 类型内存占有1个字节，在和 int 类型运算时会提升为 int 类型 ，自动补充3个字节，因此计算后的结果还是 int 类型。</p>
 <p>同样道理，当一个 int 类型变量和一个 double 变量运算时， int 类型将会自动提升为 double 类型进行运算。</p>
         
-          <a class="article-more-a" href="/2019/07/06/java基础day02/#more">more >></a>
+          <a class="article-more-a" href="/2019/01/06/java基础day02/#more">more >></a>
         
       
 
@@ -657,7 +657,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/06/java基础day02/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/06/java基础day02/">展开全文 >></a>
         </p>
       
 
@@ -694,13 +694,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/05/java基础day01/">前言、入门程序、常量、变量</a>
+      <a class="article-title" href="/2019/01/05/java基础day01/">前言、入门程序、常量、变量</a>
     </h1>
   
 
         
-        <a href="/2019/07/05/java基础day01/" class="archive-article-date">
-  	<time datetime="2019-07-04T16:35:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-05</time>
+        <a href="/2019/01/05/java基础day01/" class="archive-article-date">
+  	<time datetime="2019-01-04T16:35:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-05</time>
 </a>
         
       </header>
@@ -710,7 +710,7 @@
         <h1 id="前言、入门程序、常量、变量"><a href="#前言、入门程序、常量、变量" class="headerlink" title="前言、入门程序、常量、变量"></a>前言、入门程序、常量、变量</h1><h2 id="二级制和十进制"><a href="#二级制和十进制" class="headerlink" title="二级制和十进制"></a>二级制和十进制</h2><p>十进制数据转成二进制数据：使用除以2获取余数的方式</p>
 <p>二进制数据转成十进制数据：使用8421编码的方式</p>
         
-          <a class="article-more-a" href="/2019/07/05/java基础day01/#more">more >></a>
+          <a class="article-more-a" href="/2019/01/05/java基础day01/#more">more >></a>
         
       
 
@@ -738,7 +738,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/05/java基础day01/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/01/05/java基础day01/">展开全文 >></a>
         </p>
       
 
