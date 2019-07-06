@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>方法 | Hexo</title>
+  <title>Tag: 方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法定义方法的格式详解1234修饰符 返回值类型 方法名(参数列表)&amp;#123;     	//代码省略...     	return 结果; &amp;#125;">
-<meta name="keywords" content="java,基础">
-<meta property="og:type" content="article">
-<meta property="og:title" content="方法">
-<meta property="og:url" content="http://yoursite.com/2019/07/06/java基础day04/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/tags/方法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="方法定义方法的格式详解1234修饰符 返回值类型 方法名(参数列表)&amp;#123;     	//代码省略...     	return 结果; &amp;#125;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-06T02:36:47.065Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="方法">
-<meta name="twitter:description" content="方法定义方法的格式详解1234修饰符 返回值类型 方法名(参数列表)&amp;#123;     	//代码省略...     	return 结果; &amp;#125;">
+<meta name="twitter:title" content="Hexo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,97 +154,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java基础day04" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      方法
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/07/06/java基础day06/" class="archive-article-date">
+  	<time datetime="2019-07-06T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/07/06/java基础day06/">类与对象、封装、构造方法</a>
     </h1>
   
 
-        
-        <a href="/2019/07/06/java基础day04/" class="archive-article-date">
-  	<time datetime="2019-07-06T02:34:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="定义方法的格式详解"><a href="#定义方法的格式详解" class="headerlink" title="定义方法的格式详解"></a>定义方法的格式详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名(参数列表)&#123;     </span><br><span class="line">	//代码省略...     </span><br><span class="line">	return 结果; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-<ul>
-<li>修饰符： public static 固定写法 </li>
-<li>返回值类型： 表示方法运行的结果的数据类型，方法执行后将结果返回到调用者 </li>
-<li>参数列表：方法在运算过程中的未知数据，调用者调用方法时传递 </li>
-<li>return：将方法执行后的结果带给调用者，方法执行到 return ，整体方法运行结束</li>
-<li>小贴士：return 结果; 这里的”结果”在开发中，我们正确的叫法成为方法的返回值 </li>
-</ul>
-<h2 id="定义方法的两个明确"><a href="#定义方法的两个明确" class="headerlink" title="定义方法的两个明确"></a>定义方法的两个明确</h2><ul>
-<li>需求：定义方法实现两个整数的求和计算。 <ul>
-<li>明确返回值类型：方法计算的是整数的求和，结果也必然是个整数，返回值类型定义为int类型。 </li>
-<li>明确参数列表：计算哪两个整数的和，并不清楚，但可以确定是整数，参数列表可以定义两个int类型的 变量，由调用者调用方法时传递</li>
-</ul>
-</li>
-</ul>
-<h2 id="定义方法的注意事项"><a href="#定义方法的注意事项" class="headerlink" title="定义方法的注意事项"></a>定义方法的注意事项</h2><ul>
-<li>定义位置，类中方法外面。 </li>
-<li>返回值类型，必须要和 return 语句返回的类型相同，否则编译失败 。</li>
-<li>不能在 return 后面写代码， return 意味着方法结束，所有后面的代码永远不会执行，属于无效代码。</li>
-</ul>
-<h2 id="调用方法的三种形式"><a href="#调用方法的三种形式" class="headerlink" title="调用方法的三种形式"></a>调用方法的三种形式</h2><ul>
-<li>直接调用：直接写方法名调用</li>
-<li>赋值调用：调用方法，在方法前面定义变量，接收方法返回值</li>
-<li>输出语句调用： 在输出语句中调用方法， System.out.println(方法名()) 。</li>
-</ul>
-<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><ul>
-<li>方法重载：指在同一个类中，允许存在一个以上的同名方法，只要它们的参数列表不同即可，与修饰符和返 回值类型无关。 </li>
-<li>参数列表：个数不同，数据类型不同，顺序不同。 </li>
-<li>重载方法调用：JVM通过方法的参数列表，调用不同的方法。 </li>
-</ul>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>分享不易，请我喝杯咖啡吧~<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -261,148 +195,31 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">封装</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">方法</a>
+        		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/06/java基础day04/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/07/06/java基础day07/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Scanner类、Random类、ArrayList 类
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/07/06/java基础day03/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">流程控制语句</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#方法"><span class="toc-number">1.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#定义方法的格式详解"><span class="toc-number">1.1.</span> <span class="toc-text">定义方法的格式详解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义方法的两个明确"><span class="toc-number">1.2.</span> <span class="toc-text">定义方法的两个明确</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义方法的注意事项"><span class="toc-number">1.3.</span> <span class="toc-text">定义方法的注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调用方法的三种形式"><span class="toc-number">1.4.</span> <span class="toc-text">调用方法的三种形式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法重载"><span class="toc-number">1.5.</span> <span class="toc-text">方法重载</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/2019/07/06/java基础day04/",
-  owner: 'privateisshit',
-  repo: 'privateisshit.github.io',
-  oauth: {
-    client_id: '7950dd9529882a16b83e',
-    client_secret: 'eff7357682102179e3033b0d6dfed954b2aa2ae4',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
-  
+    
 
 
           </div>
@@ -427,9 +244,9 @@ gitment.render('gitment-ctn')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

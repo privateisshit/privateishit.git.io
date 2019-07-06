@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>方法 | Hexo</title>
+  <title>Scanner类、Random类、ArrayList 类 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法定义方法的格式详解1234修饰符 返回值类型 方法名(参数列表)&amp;#123;     	//代码省略...     	return 结果; &amp;#125;">
-<meta name="keywords" content="java,基础">
+  <meta name="description" content="API概述API(Application Programming Interface)，应用程序编程接口。Java API是一本程序员的 字典 ，是JDK中提供给 我们使用的类的说明文档。这些类将底层的代码实现封装了起来，我们不需要关心这些类是如何实现的，只需要学 习这些类如何使用即可。所以我们可以通过查询API的方式，来学习Java提供的类，并得知如何使用它们。  API使用步骤 打开帮助文档。">
+<meta name="keywords" content="java,基础,封装,API">
 <meta property="og:type" content="article">
-<meta property="og:title" content="方法">
-<meta property="og:url" content="http://yoursite.com/2019/07/06/java基础day04/index.html">
+<meta property="og:title" content="Scanner类、Random类、ArrayList 类">
+<meta property="og:url" content="http://yoursite.com/2019/07/06/java基础day07/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="方法定义方法的格式详解1234修饰符 返回值类型 方法名(参数列表)&amp;#123;     	//代码省略...     	return 结果; &amp;#125;">
+<meta property="og:description" content="API概述API(Application Programming Interface)，应用程序编程接口。Java API是一本程序员的 字典 ，是JDK中提供给 我们使用的类的说明文档。这些类将底层的代码实现封装了起来，我们不需要关心这些类是如何实现的，只需要学 习这些类如何使用即可。所以我们可以通过查询API的方式，来学习Java提供的类，并得知如何使用它们。  API使用步骤 打开帮助文档。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-06T02:36:47.065Z">
+<meta property="og:updated_time" content="2019-07-06T08:04:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="方法">
-<meta name="twitter:description" content="方法定义方法的格式详解1234修饰符 返回值类型 方法名(参数列表)&amp;#123;     	//代码省略...     	return 结果; &amp;#125;">
+<meta name="twitter:title" content="Scanner类、Random类、ArrayList 类">
+<meta name="twitter:description" content="API概述API(Application Programming Interface)，应用程序编程接口。Java API是一本程序员的 字典 ，是JDK中提供给 我们使用的类的说明文档。这些类将底层的代码实现封装了起来，我们不需要关心这些类是如何实现的，只需要学 习这些类如何使用即可。所以我们可以通过查询API的方式，来学习Java提供的类，并得知如何使用它们。  API使用步骤 打开帮助文档。">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,58 +159,173 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java基础day04" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java基础day07" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      方法
+      Scanner类、Random类、ArrayList 类
     </h1>
   
 
         
-        <a href="/2019/07/06/java基础day04/" class="archive-article-date">
-  	<time datetime="2019-07-06T02:34:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
+        <a href="/2019/07/06/java基础day07/" class="archive-article-date">
+  	<time datetime="2019-07-06T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="定义方法的格式详解"><a href="#定义方法的格式详解" class="headerlink" title="定义方法的格式详解"></a>定义方法的格式详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名(参数列表)&#123;     </span><br><span class="line">	//代码省略...     </span><br><span class="line">	return 结果; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>API(Application Programming Interface)，应用程序编程接口。Java API是一本程序员的 字典 ，是JDK中提供给 我们使用的类的说明文档。这些类将底层的代码实现封装了起来，我们不需要关心这些类是如何实现的，只需要学 习这些类如何使用即可。所以我们可以通过查询API的方式，来学习Java提供的类，并得知如何使用它们。 </p>
+<h4 id="API使用步骤"><a href="#API使用步骤" class="headerlink" title="API使用步骤"></a>API使用步骤</h4><ol>
+<li><p>打开帮助文档。 </p>
+</li>
+<li><p>点击显示，找到索引，看到输入框。 </p>
+</li>
+<li><p>你要找谁？在输入框里输入，然后回车。 </p>
+</li>
+<li><p>看包。java.lang下的类不需要导包，其他需要。 </p>
+</li>
+<li><p>看类的解释和说明。 </p>
+</li>
+<li><p>学习构造方法。</p>
+</li>
+<li><p>使用成员方法。 </p>
+</li>
+</ol>
 <a id="more"></a>
+
+<h2 id="Scanner类"><a href="#Scanner类" class="headerlink" title="Scanner类"></a>Scanner类</h2><p>定义：一个可以解析基本类型和字符串的简单文本扫描器。 </p>
+<p>备注：System.in 系统输入指的是通过键盘录入数据。 </p>
+<h4 id="引用类型使用步骤"><a href="#引用类型使用步骤" class="headerlink" title="引用类型使用步骤"></a>引用类型使用步骤</h4><p>导包 ：使用import关键字导包，在类的所有代码之前导包，引入要使用的类型，java.lang包下的所有类无需导入。 </p>
+<p>格 式：</p>
+<p>​    import 包名.类名</p>
+<h4 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h4><p>使用该类的构造方法，创建一个该类的对象。 格式：</p>
+<p>​    数据类型 变量名  =  new  数据类型（参数列表）；</p>
+<h4 id="调用方法"><a href="#调用方法" class="headerlink" title="调用方法"></a>调用方法</h4><p>调用该类的成员方法，完成指定功能。 格式：</p>
+<p>​    变量名.方法名（）；</p>
+<h4 id="Scanner使用步骤"><a href="#Scanner使用步骤" class="headerlink" title="Scanner使用步骤"></a>Scanner使用步骤</h4><p>查看类</p>
 <ul>
-<li>修饰符： public static 固定写法 </li>
-<li>返回值类型： 表示方法运行的结果的数据类型，方法执行后将结果返回到调用者 </li>
-<li>参数列表：方法在运算过程中的未知数据，调用者调用方法时传递 </li>
-<li>return：将方法执行后的结果带给调用者，方法执行到 return ，整体方法运行结束</li>
-<li>小贴士：return 结果; 这里的”结果”在开发中，我们正确的叫法成为方法的返回值 </li>
+<li>java.util.Scanner ：该类需要import导入后使用。 </li>
 </ul>
-<h2 id="定义方法的两个明确"><a href="#定义方法的两个明确" class="headerlink" title="定义方法的两个明确"></a>定义方法的两个明确</h2><ul>
-<li>需求：定义方法实现两个整数的求和计算。 <ul>
-<li>明确返回值类型：方法计算的是整数的求和，结果也必然是个整数，返回值类型定义为int类型。 </li>
-<li>明确参数列表：计算哪两个整数的和，并不清楚，但可以确定是整数，参数列表可以定义两个int类型的 变量，由调用者调用方法时传递</li>
+<p>查看构造方法</p>
+<ul>
+<li>public Scanner(InputStream source) : 构造一个新的 Scanner ，它生成的值是从指定的输入流扫描的。</li>
+</ul>
+<p>查看成员方法</p>
+<ul>
+<li>public int nextInt() ：将输入信息的下一个标记扫描为一个 int 值。 使用Scanner类，完成接收键盘录入数据的操作，代码如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//1. 导包 </span><br><span class="line">import java.util.Scanner; </span><br><span class="line">public class Demo01_Scanner &#123;    </span><br><span class="line">	public static void main(String[] args) &#123;         </span><br><span class="line">	//2. 创建键盘录入数据的对象           </span><br><span class="line">	Scanner sc = new Scanner(System.in);             </span><br><span class="line">	//3. 接收数据           </span><br><span class="line">	System.out.println(&quot;请录入一个整数：&quot;);           </span><br><span class="line">	int i = sc.nextInt();             </span><br><span class="line">	//4. 输出数据           </span><br><span class="line">	System.out.println(&quot;i:&quot;+i);         </span><br><span class="line">	&#125;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="匿名对象"><a href="#匿名对象" class="headerlink" title="匿名对象"></a>匿名对象</h2><p>概念 ：创建对象时，只有创建对象的语句，却没有把对象地址值赋值给某个变量。虽然是创建对象的简化写法，但是应用 场景非常有限。</p>
+<ul>
+<li>匿名对象 ：没有变量名的对象。</li>
+</ul>
+<p>格式</p>
+<p>new 类名（参数列表）；</p>
+<p>应用场景 </p>
+<ul>
+<li>创建匿名对象直接调用方法，没有变量名。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new Scanner(System.in).nextInt();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>一旦调用两次方法，就是创建了两个对象。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">new Scanner(System.in).nextInt(); </span><br><span class="line">new Scanner(System.in).nextInt();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>匿名对象可以作为方法的参数和返回值</p>
+<ul>
+<li><p>作为参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Test &#123;     </span><br><span class="line">	public static void main(String[] args) &#123;       </span><br><span class="line">		// 普通方式             </span><br><span class="line">		Scanner sc = new Scanner(System.in);           </span><br><span class="line">		input(sc);                </span><br><span class="line">		//匿名对象作为方法接收的参数         </span><br><span class="line">		input(new Scanner(System.in));     </span><br><span class="line">	&#125;      </span><br><span class="line">	public static void input(Scanner sc)&#123;          </span><br><span class="line">		System.out.println(sc);         </span><br><span class="line">		&#125;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>作为返回值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Test2 &#123;     </span><br><span class="line">	public static void main(String[] args) &#123;          </span><br><span class="line">		// 普通方式             </span><br><span class="line">		Scanner sc = getScanner();      </span><br><span class="line">		&#125;         </span><br><span class="line">	public static Scanner getScanner()&#123;            </span><br><span class="line">		//普通方式         </span><br><span class="line">		//Scanner sc = new Scanner(System.in);           </span><br><span class="line">		//return sc;                </span><br><span class="line">		//匿名对象作为方法返回值         </span><br><span class="line">		return new Scanner(System.in); </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
 </li>
 </ul>
-<h2 id="定义方法的注意事项"><a href="#定义方法的注意事项" class="headerlink" title="定义方法的注意事项"></a>定义方法的注意事项</h2><ul>
-<li>定义位置，类中方法外面。 </li>
-<li>返回值类型，必须要和 return 语句返回的类型相同，否则编译失败 。</li>
-<li>不能在 return 后面写代码， return 意味着方法结束，所有后面的代码永远不会执行，属于无效代码。</li>
+<h2 id="Random类"><a href="#Random类" class="headerlink" title="Random类"></a>Random类</h2><p>定义：此类的实例用于生成伪随机数。</p>
+<p>例子：猜数字小游戏</p>
+<p>游戏开始时，会随机生成一个1-100之间的整数 number 。玩家猜测一个数字 guessNumber ，会与 number 作比 较，系统提示大了或者小了，直到玩家猜中，游戏结束。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">// 导包 </span><br><span class="line">import java.util.Random; </span><br><span class="line">public class Test02Random &#123;   </span><br><span class="line">	public static void main(String[] args) &#123;     </span><br><span class="line">	// 系统产生一个随机数1‐100之间的。     </span><br><span class="line">	Random r = new Random();     </span><br><span class="line">	int number = r.nextInt(100) + 1;     </span><br><span class="line">	while(true)&#123;       </span><br><span class="line">	// 键盘录入我们要猜的数据       </span><br><span class="line">	Scanner sc = new Scanner(System.in);       </span><br><span class="line">	System.out.println(&quot;请输入你要猜的数字(1‐100)：&quot;);       </span><br><span class="line">	int guessNumber = sc.nextInt();         </span><br><span class="line">	// 比较这两个数据(用if语句)       </span><br><span class="line">		if (guessNumber &gt; number) &#123;         </span><br><span class="line">			System.out.println(&quot;你猜的数据&quot; + guessNumber + &quot;大了&quot;);       &#125; else if (guessNumber &lt; number) &#123;         </span><br><span class="line">			System.out.println(&quot;你猜的数据&quot; + guessNumber + &quot;小了&quot;);       </span><br><span class="line">	 &#125; else &#123;         </span><br><span class="line">			System.out.println(&quot;恭喜你,猜中了&quot;);         </span><br><span class="line">			break;       </span><br><span class="line">			&#125;     </span><br><span class="line">		&#125;   </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="ArrayList类-★★★"><a href="#ArrayList类-★★★" class="headerlink" title="ArrayList类  ★★★"></a>ArrayList类  ★★★</h2><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>java.util.ArrayList 是大小可变的数组的实现，存储在内的数据称为元素。</p>
+<p>此类提供一些方法来操作内部存储 的元素。 ArrayList 中可不断添加元素，其大小也自动增长。</p>
+<h4 id="ArrayList使用步骤"><a href="#ArrayList使用步骤" class="headerlink" title="ArrayList使用步骤"></a>ArrayList使用步骤</h4><p>查看类</p>
+<ul>
+<li>java.util.ArrayList <e> ：该类需要 import导入使后使用。 </e></li>
 </ul>
-<h2 id="调用方法的三种形式"><a href="#调用方法的三种形式" class="headerlink" title="调用方法的三种形式"></a>调用方法的三种形式</h2><ul>
-<li>直接调用：直接写方法名调用</li>
-<li>赋值调用：调用方法，在方法前面定义变量，接收方法返回值</li>
-<li>输出语句调用： 在输出语句中调用方法， System.out.println(方法名()) 。</li>
+<p><e> ，表示一种指定的数据类型，叫做泛型。 E ，取自Element（元素）的首字母。在出现 E 的地方，我们使 用一种引用数据类型将其替换即可，表示我们将存储哪种引用类型的元素。</e></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt;，ArrayList&lt;Student&gt;</span><br></pre></td></tr></table></figure>
+
+<p>查看构造方法</p>
+<ul>
+<li>public ArrayList() ：构造一个内容为空的集合。</li>
 </ul>
-<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><ul>
-<li>方法重载：指在同一个类中，允许存在一个以上的同名方法，只要它们的参数列表不同即可，与修饰符和返 回值类型无关。 </li>
-<li>参数列表：个数不同，数据类型不同，顺序不同。 </li>
-<li>重载方法调用：JVM通过方法的参数列表，调用不同的方法。 </li>
+<p>基本格式:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list = new ArrayList&lt;String&gt;();</span><br></pre></td></tr></table></figure>
+
+<p>在JDK 7后,右侧泛型的尖括号之内可以留空，但是&lt;&gt;仍然要写。简化格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();</span><br></pre></td></tr></table></figure>
+
+<p>查看成员方法<br>public boolean add(E e) ： 将指定的元素添加到此集合的尾部。 参数 E e ，在构造ArrayList对象时， <e> 指定了什么数据类型，那么 add(E e) 方法中，只能添加什么数据 类型的对象。<br>使用ArrayList类，存储三个字符串元素，代码如下：</e></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public class Test02StudentArrayList &#123;   </span><br><span class="line">public static void main(String[] args) &#123;     </span><br><span class="line">	//创建学生数组     </span><br><span class="line">	ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();       </span><br><span class="line">	//创建学生对象     </span><br><span class="line">	String s1 = &quot;曹操&quot;;     </span><br><span class="line">	String s2 = &quot;刘备&quot;;     </span><br><span class="line">	String s3 = &quot;孙权&quot;;       </span><br><span class="line">	//打印学生ArrayList集合     </span><br><span class="line">	System.out.println(list);       </span><br><span class="line">	//把学生对象作为元素添加到集合     </span><br><span class="line">	list.add(s1);     </span><br><span class="line">	list.add(s2);     </span><br><span class="line">	list.add(s3);</span><br><span class="line">	//打印学生ArrayList集合     </span><br><span class="line">	System.out.println(list);   </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="常用方法和遍历"><a href="#常用方法和遍历" class="headerlink" title="常用方法和遍历"></a>常用方法和遍历</h4><p>对于元素的操作,基本体现在——增、删、查。常用的方法有： </p>
+<ul>
+<li>public boolean add(E e) ：将指定的元素添加到此集合的尾部。 </li>
+<li>public E remove(int index) ：移除此集合中指定位置上的元素。返回被删除的元素。  </li>
+<li>public E get(int index) ：返回此集合中指定位置上的元素。返回获取的元素。</li>
+<li>public int size() ：返回此集合中的元素数。遍历集合时，可以控制索引范围，防止越界。 </li>
 </ul>
+<h4 id="如何存储基本数据类型"><a href="#如何存储基本数据类型" class="headerlink" title="如何存储基本数据类型"></a>如何存储基本数据类型</h4><p>ArrayList对象不能存储基本类型，只能存储引用类型的数据。类似 <int> 不能写，但是存储基本数据类型对应的 包装类型是可以的。所以，想要存储基本类型数据， &lt;&gt; 中的数据类型，必须转换后才能编写，转换写法如下：</int></p>
+<table>
+<thead>
+<tr>
+<th>基本类型</th>
+<th>基本类型包装类</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+</tbody></table>
 
       
 
@@ -260,6 +375,14 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">封装</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">API</a>
         		</li>
       		
 		</ul>
@@ -315,7 +438,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/06/java基础day04/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/06/java基础day07/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -329,18 +452,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/06/java基础day07/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/07/06/java基础day06/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Scanner类、Random类、ArrayList 类
+          类与对象、封装、构造方法
         
       </div>
     </a>
   
   
-    <a href="/2019/07/06/java基础day03/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">流程控制语句</div>
+    <a href="/2019/07/06/java基础day04/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">方法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -367,7 +490,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#方法"><span class="toc-number">1.</span> <span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#定义方法的格式详解"><span class="toc-number">1.1.</span> <span class="toc-text">定义方法的格式详解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义方法的两个明确"><span class="toc-number">1.2.</span> <span class="toc-text">定义方法的两个明确</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义方法的注意事项"><span class="toc-number">1.3.</span> <span class="toc-text">定义方法的注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调用方法的三种形式"><span class="toc-number">1.4.</span> <span class="toc-text">调用方法的三种形式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法重载"><span class="toc-number">1.5.</span> <span class="toc-text">方法重载</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#API"><span class="toc-number">1.</span> <span class="toc-text">API</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概述"><span class="toc-number">1.0.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#API使用步骤"><span class="toc-number">1.0.2.</span> <span class="toc-text">API使用步骤</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scanner类"><span class="toc-number">2.</span> <span class="toc-text">Scanner类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#引用类型使用步骤"><span class="toc-number">2.0.1.</span> <span class="toc-text">引用类型使用步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建对象"><span class="toc-number">2.0.2.</span> <span class="toc-text">创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#调用方法"><span class="toc-number">2.0.3.</span> <span class="toc-text">调用方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scanner使用步骤"><span class="toc-number">2.0.4.</span> <span class="toc-text">Scanner使用步骤</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#匿名对象"><span class="toc-number">3.</span> <span class="toc-text">匿名对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Random类"><span class="toc-number">4.</span> <span class="toc-text">Random类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ArrayList类-★★★"><span class="toc-number">5.</span> <span class="toc-text">ArrayList类  ★★★</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概念"><span class="toc-number">5.0.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ArrayList使用步骤"><span class="toc-number">5.0.2.</span> <span class="toc-text">ArrayList使用步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常用方法和遍历"><span class="toc-number">5.0.3.</span> <span class="toc-text">常用方法和遍历</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何存储基本数据类型"><span class="toc-number">5.0.4.</span> <span class="toc-text">如何存储基本数据类型</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -392,7 +515,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2019/07/06/java基础day04/",
+  id: "http://yoursite.com/2019/07/06/java基础day07/",
   owner: 'privateisshit',
   repo: 'privateisshit.github.io',
   oauth: {
