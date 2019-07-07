@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 封装 | Hexo</title>
+  <title>String类、static关键字、Arrays类、Math类 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/封装/index.html">
+  <meta name="description" content="String类概述java.lang.String 类代表字符串。Java程序中所有的字符串文字（例如 “abc” ）都可以被看作是实现此类的实 例。类 String 中包括用于检查各个字符串的方法，比如用于比较字符串，搜索字符串，提取子字符串以及创建具有翻 译为大写或小写的所有字符的字符串的副本。  特点 字符串不变：字符串的值在创建后不能被更改。  因为String对象是不可变的，所以它们可以">
+<meta name="keywords" content="java,基础,API">
+<meta property="og:type" content="article">
+<meta property="og:title" content="String类、static关键字、Arrays类、Math类">
+<meta property="og:url" content="http://yoursite.com/2019/01/15/java基础day08/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="String类概述java.lang.String 类代表字符串。Java程序中所有的字符串文字（例如 “abc” ）都可以被看作是实现此类的实 例。类 String 中包括用于检查各个字符串的方法，比如用于比较字符串，搜索字符串，提取子字符串以及创建具有翻 译为大写或小写的所有字符的字符串的副本。  特点 字符串不变：字符串的值在创建后不能被更改。  因为String对象是不可变的，所以它们可以">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-06T11:58:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="String类、static关键字、Arrays类、Math类">
+<meta name="twitter:description" content="String类概述java.lang.String 类代表字符串。Java程序中所有的字符串文字（例如 “abc” ）都可以被看作是实现此类的实 例。类 String 中包括用于检查各个字符串的方法，比如用于比较字符串，搜索字符串，提取子字符串以及创建具有翻 译为大写或小写的所有字符的字符串的副本。  特点 字符串不变：字符串的值在创建后不能被更改。  因为String对象是不可变的，所以它们可以">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,36 +159,179 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-java基础day08" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/01/14/java基础day07/" class="archive-article-date">
-  	<time datetime="2019-01-14T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/14/java基础day07/">Scanner类、Random类、ArrayList 类</a>
+    <h1 class="article-title" itemprop="name">
+      String类、static关键字、Arrays类、Math类
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/01/15/java基础day08/" class="archive-article-date">
+  	<time datetime="2019-01-15T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="String类"><a href="#String类" class="headerlink" title="String类"></a>String类</h2><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>java.lang.String 类代表字符串。Java程序中所有的字符串文字（例如 “abc” ）都可以被看作是实现此类的实 例。<br>类 String 中包括用于检查各个字符串的方法，比如用于比较字符串，搜索字符串，提取子字符串以及创建具有翻 译为大写或小写的所有字符的字符串的副本。 </p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ol>
+<li><p>字符串不变：字符串的值在创建后不能被更改。</p>
+</li>
+<li><p>因为String对象是不可变的，所以它们可以被共享。</p>
+</li>
+<li><p>“abc” 等效于 char[] data={ ‘a’ , ‘b’ , ‘c’ } 。// String底层是靠字符数组实现的。</p>
+<a id="more"></a>
+
+</li>
+</ol>
+<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><p>比较功能的方法：</p>
+<ul>
+<li>public boolean equals (Object anObject) ：将此字符串与指定对象进行比</li>
+<li>public boolean equalsIgnoreCase (String anotherString) ：将此字符串与指定对象进行比较，忽略大小 写</li>
+</ul>
+<p>Object 是” 对象”的意思，也是一种引用类型。作为参数类型，表示任意对象都可以传递到方法中。 </p>
+<p>获取功能的方法</p>
+<ul>
+<li>public int length () ：返回此字符串的长度。 </li>
+<li>public String concat (String str) ：将指定的字符串连接到该字符串的末尾。 </li>
+<li>public char charAt (int index) ：返回指定索引处的 char值。 </li>
+<li>public int indexOf (String str) ：返回指定子字符串第一次出现在该字符串内的索引。 </li>
+<li>public String substring (int beginIndex) ：返回一个子字符串，从beginIndex开始截取字符串到字符 串结尾。 </li>
+<li>public String substring (int beginIndex, int endIndex) ：返回一个子字符串，从beginIndex到 endIndex截取字符串。含beginIndex，不含endIndex。</li>
+</ul>
+<p>转换功能的方法</p>
+<ul>
+<li>public char[] toCharArray () ：将此字符串转换为新的字符数组。 </li>
+<li>public byte[] getBytes () ：使用平台的默认字符集将该 String编码转换为新的字节数组。 </li>
+<li>public String replace (CharSequence target, CharSequence replacement) ：将与target匹配的字符串使 用replacement字符串替换。</li>
+<li>String toLowerCase()：将字符串转为小写</li>
+<li>String toUpperCase()：将字符串转为大写</li>
+<li>String trim()：去掉字符串两端的空格</li>
+</ul>
+<p>分割功能的方法</p>
+<ul>
+<li>public String[] split(String regex) ：将此字符串按照给定的regex（规则）拆分为字符串数组。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\t,\r\n --&gt; \表示转译字符,\t转译成tab,\r\n转译成换行</span><br><span class="line">\\. --&gt;  第一个\表示后面\不是要转译,是一个正则表达式的\</span><br><span class="line">\. --&gt; 在正则表达式中表示匹配所有的.</span><br><span class="line">.  --&gt; 在正则表达式中表示匹配所有字符</span><br></pre></td></tr></table></figure>
+
+<p>判断功能的方法</p>
+<ul>
+<li>boolean contains(CharSequence s) : 判断字符串是否包含指定的字符串</li>
+<li>boolean startsWith(String prefix) ： 判断字符串是否以指定的字符串开头</li>
+<li>boolean endsWith(String suffix) ：判断字符串是否以指定的字符串结尾</li>
+</ul>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>通过new的创建方式,string变量指向的是堆中的地址</li>
+<li>通过双引号直接创建,string变量指向的是常量池中的地址</li>
+</ul>
+<p>==号：</p>
+<ul>
+<li>比较基本类型,比较的是变量中具体的值</li>
+<li>比较引用类型,比较的是变量中的地址值</li>
+</ul>
+<h2 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h2><h4 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h4><p>关于 static 关键字的使用，它可以用来修饰的成员变量和成员方法，被修饰的成员是属于类的，而不是单单是属 于某个对象的。也就是说，既然属于类，就可以不靠创建对象来调用了。</p>
+<h4 id="定义和使用格式"><a href="#定义和使用格式" class="headerlink" title="定义和使用格式"></a>定义和使用格式</h4><p>类变量 ：<br>当 static 修饰成员变量时，该变量称为类变量。该类的每个对象都共享同一个类变量的值。任何对象都可以更改 该类变量的值，但也可以在不创建该类的对象的情况下对类变量进行操作。</p>
+<ul>
+<li>类变量：使用 static关键字修饰的成员变量。</li>
+</ul>
+<p>定义格式：static 数据类型  变量名；</p>
+<p>静态方法 ：<br>当 static 修饰成员方法时，该方法称为类方法 。静态方法在声明中有 static ，建议使用类名来调用，而不需要 创建类的对象。调用方式非常简单。</p>
+<ul>
+<li>类方法：使用 static关键字修饰的成员方法，习惯称为静态方法。</li>
+</ul>
+<p>定义格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">修饰符 static 返回值类型 方法名 (参数列表)&#123;  </span><br><span class="line">	// 执行语句 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>静态方法调用的注意事项： <ul>
+<li>静态方法可以直接访问类变量和静态方法。 </li>
+<li>静态方法不能直接访问普通成员变量或成员方法。反之，成员方法可以直接访问类变量或静态方法。 </li>
+<li>静态方法中，不能使用this关键字。</li>
+<li>静态方法只能访问静态成员。 </li>
+</ul>
+</li>
+</ul>
+<h4 id="调用格式"><a href="#调用格式" class="headerlink" title="调用格式"></a>调用格式</h4><p>被static修饰的成员可以并且建议通过类名直接访问。虽然也可以通过对象名访问静态成员，原因即多个对象均属 于一个类，共享使用同一个静态成员，但是不建议，会出现警告信息。</p>
+<p>格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 访问类变量 类名.类变量名；   </span><br><span class="line">// 调用静态方法 类名.静态方法名(参数)；</span><br></pre></td></tr></table></figure>
+
+<h4 id="静态原理"><a href="#静态原理" class="headerlink" title="静态原理"></a>静态原理</h4><p>static 修饰的内容：</p>
+<ul>
+<li>是随着类的加载而加载的，且只加载一次。 </li>
+<li>存储于一块固定的内存区域（静态区），所以，可以直接被类名调用。 </li>
+<li>它优先于对象存在，所以，可以被所有对象共享。</li>
+</ul>
+<h4 id="静态代码块"><a href="#静态代码块" class="headerlink" title="静态代码块"></a>静态代码块</h4><p>静态代码块：</p>
+<ul>
+<li>定义在成员位置，使用static修饰的代码块{ }。 </li>
+<li>位置：类中方法外。 执行：随着类的加载而执行且执行一次，优先于main方法和构造方法的执行。</li>
+</ul>
+<p>格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class ClassName&#123;   </span><br><span class="line">	static &#123;     </span><br><span class="line">		// 执行语句    </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>作用：给类变量进行初始化赋值。</p>
+<p>static 关键字，可以修饰变量、方法和代码块。在使用的过程中，其主要目的还是想在不创建对象的情况 下，去调用方法。下面将介绍两个工具类，来体现static 方法的便利。 </p>
+<h2 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h2><h4 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h4><p>java.util.Arrays 此类包含用来操作数组的各种方法，比如排序和搜索等。其所有方法均为静态方法，调用起来 非常简单。 </p>
+<h4 id="操作数组的方法"><a href="#操作数组的方法" class="headerlink" title="操作数组的方法"></a>操作数组的方法</h4><ul>
+<li>public static String toString(int[] a) ：返回指定数组内容的字符串表示形式。</li>
+<li>public static void sort(int[] a) ：对指定的 int 型数组按数字升序进行排序。</li>
+</ul>
+<h2 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h2><h4 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h4><p>java.lang.Math 类包含用于执行基本数学运算的方法，如初等指数、对数、平方根和三角函数。类似这样的工具 类，其所有方法均为静态方法，并且不会创建对象，调用起来非常简单。 </p>
+<h4 id="基本运算的方法"><a href="#基本运算的方法" class="headerlink" title="基本运算的方法"></a>基本运算的方法</h4><ul>
+<li>public static double abs(double a) ：返回 double 值的绝对值。 </li>
+<li>public static double ceil(double a) ：返回大于等于参数的小的整数。</li>
+<li>public static double floor(double a) ：返回小于等于参数大的整数。</li>
+<li>public static long round(double a) ：返回接近参数的 long。(相当于四舍五入方法) </li>
+</ul>
+<p>成员变量 ：</p>
+<ul>
+<li>PI：圆周率近似值</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>分享不易，请我喝杯咖啡吧~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,10 +342,6 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">封装</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -207,69 +351,144 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/15/java基础day08/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/01/12/java基础day06/" class="archive-article-date">
-  	<time datetime="2019-01-12T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-12</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/01/16/static关键字/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          static关键字
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/01/14/java基础day07/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Scanner类、Random类、ArrayList 类</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/12/java基础day06/">类与对象、封装、构造方法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">封装</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">方法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#String类"><span class="toc-number">1.</span> <span class="toc-text">String类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概述"><span class="toc-number">1.0.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#特点"><span class="toc-number">1.0.2.</span> <span class="toc-text">特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常用方法"><span class="toc-number">1.0.3.</span> <span class="toc-text">常用方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项"><span class="toc-number">1.0.4.</span> <span class="toc-text">注意事项</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#static关键字"><span class="toc-number">2.</span> <span class="toc-text">static关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概述-1"><span class="toc-number">2.0.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和使用格式"><span class="toc-number">2.0.2.</span> <span class="toc-text">定义和使用格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#调用格式"><span class="toc-number">2.0.3.</span> <span class="toc-text">调用格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#静态原理"><span class="toc-number">2.0.4.</span> <span class="toc-text">静态原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#静态代码块"><span class="toc-number">2.0.5.</span> <span class="toc-text">静态代码块</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arrays类"><span class="toc-number">3.</span> <span class="toc-text">Arrays类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概述-2"><span class="toc-number">3.0.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#操作数组的方法"><span class="toc-number">3.0.2.</span> <span class="toc-text">操作数组的方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Math类"><span class="toc-number">4.</span> <span class="toc-text">Math类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概述-3"><span class="toc-number">4.0.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#基本运算的方法"><span class="toc-number">4.0.2.</span> <span class="toc-text">基本运算的方法</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/01/15/java基础day08/",
+  owner: 'privateisshit',
+  repo: 'privateisshit.github.io',
+  oauth: {
+    client_id: '7950dd9529882a16b83e',
+    client_secret: 'eff7357682102179e3033b0d6dfed954b2aa2ae4',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -294,9 +513,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
