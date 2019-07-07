@@ -6,24 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>static关键字 | Hexo</title>
+  <title>ﬁnal、权限、内部类、引用类型 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="static关键字的用法与作用基础阶段对static关键字定义与使用模糊不清楚，在网上查找此篇博客有助于加深理解。在java的关键字中，static和final是两个我们必须掌握的关键字。不同于其他关键字，他们都有多种用法，而且在一定环境下使用，可以提高程序的运行性能，优化程序的结构。下面我们先来了解一下static关键字及其用法。">
-<meta name="keywords" content="java,基础,关键字">
+  <meta name="description" content="final关键字概述Java提供了 final 关键字， 用于修饰不可改变内容。  ﬁnal： 不可改变。  可以用于修饰类、方法和变量。   类：被修饰的类，不能被继承。   方法：被修饰的方法，不能被重写。   变量：被修饰的变量，不能被重新赋值。">
+<meta name="keywords" content="java,基础,特性">
 <meta property="og:type" content="article">
-<meta property="og:title" content="static关键字">
-<meta property="og:url" content="http://yoursite.com/2019/01/16/static关键字/index.html">
+<meta property="og:title" content="ﬁnal、权限、内部类、引用类型">
+<meta property="og:url" content="http://yoursite.com/2019/01/19/java基础day11/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="static关键字的用法与作用基础阶段对static关键字定义与使用模糊不清楚，在网上查找此篇博客有助于加深理解。在java的关键字中，static和final是两个我们必须掌握的关键字。不同于其他关键字，他们都有多种用法，而且在一定环境下使用，可以提高程序的运行性能，优化程序的结构。下面我们先来了解一下static关键字及其用法。">
+<meta property="og:description" content="final关键字概述Java提供了 final 关键字， 用于修饰不可改变内容。  ﬁnal： 不可改变。  可以用于修饰类、方法和变量。   类：被修饰的类，不能被继承。   方法：被修饰的方法，不能被重写。   变量：被修饰的变量，不能被重新赋值。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170128111659941-455494498.jpg">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170129182729316-1860809324.jpg">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170129182741362-1771285007.jpg">
-<meta property="og:updated_time" content="2019-07-06T12:35:17.000Z">
+<meta property="og:updated_time" content="2019-07-07T03:53:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="static关键字">
-<meta name="twitter:description" content="static关键字的用法与作用基础阶段对static关键字定义与使用模糊不清楚，在网上查找此篇博客有助于加深理解。在java的关键字中，static和final是两个我们必须掌握的关键字。不同于其他关键字，他们都有多种用法，而且在一定环境下使用，可以提高程序的运行性能，优化程序的结构。下面我们先来了解一下static关键字及其用法。">
-<meta name="twitter:image" content="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170128111659941-455494498.jpg">
+<meta name="twitter:title" content="ﬁnal、权限、内部类、引用类型">
+<meta name="twitter:description" content="final关键字概述Java提供了 final 关键字， 用于修饰不可改变内容。  ﬁnal： 不可改变。  可以用于修饰类、方法和变量。   类：被修饰的类，不能被继承。   方法：被修饰的方法，不能被重写。   变量：被修饰的变量，不能被重新赋值。">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -163,80 +159,145 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-static关键字" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java基础day11" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      static关键字
+      ﬁnal、权限、内部类、引用类型
     </h1>
   
 
         
-        <a href="/2019/01/16/static关键字/" class="archive-article-date">
-  	<time datetime="2019-01-16T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-16</time>
+        <a href="/2019/01/19/java基础day11/" class="archive-article-date">
+  	<time datetime="2019-01-19T02:38:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="static关键字的用法与作用"><a href="#static关键字的用法与作用" class="headerlink" title="static关键字的用法与作用"></a>static关键字的用法与作用</h2><p>基础阶段对static关键字定义与使用模糊不清楚，在网上查找此篇博客有助于加深理解。<br>在java的关键字中，<strong>static</strong>和<strong>final</strong>是两个我们必须掌握的关键字。不同于其他关键字，他们都有多种用法，而且在一定环境下使用，可以提高程序的运行性能，优化程序的结构。下面我们先来了解一下static关键字及其用法。</p>
+        <h2 id="final关键字"><a href="#final关键字" class="headerlink" title="final关键字"></a>final关键字</h2><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>Java提供了 final 关键字， 用于修饰不可改变内容。</p>
+<ul>
+<li><p>ﬁnal： 不可改变。</p>
+<ul>
+<li><p>可以用于修饰类、方法和变量。 </p>
+</li>
+<li><p>类：被修饰的类，不能被继承。 </p>
+</li>
+<li><p>方法：被修饰的方法，不能被重写。 </p>
+</li>
+<li><p>变量：被修饰的变量，不能被重新赋值。</p>
 <a id="more"></a>
 
-<h3 id="四种用法"><a href="#四种用法" class="headerlink" title="四种用法"></a>四种用法</h3><p>static是java中非常重要的一个关键字，而且它的用法也很丰富，主要有四种用法：</p>
-<ol>
-<li><p>用来修饰成员变量，将其变为类的成员，从而实现所有对象对于该成员的共享；</p>
 </li>
-<li><p>用来修饰成员方法，将其变为类方法，可以直接使用<strong>“类名.方法名”</strong>的方式调用，常用于工具类；</p>
+</ul>
 </li>
-<li><p>静态块用法，将多个类成员放在一起初始化，使得程序更加规整，其中理解对象的初始化过程非常关键；</p>
+</ul>
+<h4 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h4><p>修饰类 ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">final class 类名 &#123;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>修饰方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">修饰符 final 返回值类型 方法名(参数列表)&#123;     </span><br><span class="line">	//方法体 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>重写被 final 修饰的方法，编译时就会报错。</p>
+<p>修饰变量：</p>
+<p>局部变量——基本类型<br>基本类型的局部变量，被ﬁnal修饰后，只能赋值一次，不能再更改。</p>
+<p>局部变量——引用类型 </p>
+<p>引用类型的局部变量，被ﬁnal修饰后，只能指向一个对象，地址不能再更改。但是不影响对象内部的成员变量值的 修改。</p>
+<p> 成员变量<br>成员变量涉及到初始化的问题，初始化方式有两种，只能二选一：</p>
+<ul>
+<li><p>显示初始化：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public class User &#123;     </span><br><span class="line">	final String USERNAME = &quot;张三&quot;;     </span><br><span class="line">	private int age; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>静态导包用法，将类的方法直接导入到当前类中，从而直接使用<strong>“方法名”</strong>即可调用类方法，更加方便。</p>
+<li><p>构造方法初始化。</p>
 </li>
-</ol>
-<h3 id="修饰成员变量"><a href="#修饰成员变量" class="headerlink" title="修饰成员变量"></a>修饰成员变量</h3><p>在我们平时的使用当中，static最常用的功能就是修饰类的属性和方法，让他们成为类的成员属性和方法，我们通常将用static修饰的成员称为类成员或者静态成员，这句话挺起来都点奇怪，其实这是相对于对象的属性和方法来说的。请看下面的例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public class Person &#123;</span><br><span class="line">    String name;</span><br><span class="line">    int age;</span><br><span class="line">    </span><br><span class="line">    public String toString() &#123;</span><br><span class="line">        return &quot;Name:&quot; + name + &quot;, Age:&quot; + age;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Person p1 = new Person();</span><br><span class="line">        p1.name = &quot;zhangsan&quot;;</span><br><span class="line">        p1.age = 10;</span><br><span class="line">        Person p2 = new Person();</span><br><span class="line">        p2.name = &quot;lisi&quot;;</span><br><span class="line">        p2.age = 12;</span><br><span class="line">        System.out.println(p1);</span><br><span class="line">        System.out.println(p2);</span><br><span class="line">    &#125;</span><br><span class="line">    /**Output</span><br><span class="line">     * Name:zhangsan, Age:10</span><br><span class="line">     * Name:lisi, Age:12</span><br><span class="line">     *///~</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class User &#123;     </span><br><span class="line">	final String USERNAME ;     </span><br><span class="line">	private int age;     </span><br><span class="line">	public User(String username, int age) &#123;         </span><br><span class="line">	this.USERNAME = username;         </span><br><span class="line">	this.age = age;     </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>上面的代码我们很熟悉，根据Person构造出的每一个对象都是独立存在的，保存有自己独立的成员变量，相互不会影响，他们在内存中的示意如下:</p>
-<p><img src="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170128111659941-455494498.jpg" alt="img"></p>
-<p>从上图中可以看出，p1和p2两个变量引用的对象分别存储在内存中堆区域的不同地址中，所以他们之间相互不会干扰。但其实，在这当中，我们省略了一些重要信息，相信大家也都会想到，对象的成员属性都在这了，由每个对象自己保存，那么他们的方法呢？实际上，不论一个类创建了几个对象，他们的方法都是一样的：</p>
-<p><img src="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170129182729316-1860809324.jpg" alt="img"></p>
-<p>从上面的图中我们可以看到，两个Person对象的方法实际上只是指向了同一个方法定义。这个方法定义是位于内存中的一块不变区域（由jvm划分），我们暂称它为静态存储区。这一块存储区不仅存放了方法的定义，实际上从更大的角度而言，它存放的是各种类的定义，当我们通过new来生成对象时，会根据这里定义的类的定义去创建对象。多个对象仅会对应同一个方法，这里有一个让我们充分信服的理由，那就是不管多少的对象，他们的方法总是相同的，尽管最后的输出会有所不同，但是方法总是会按照我们预想的结果去操作，即不同的对象去调用同一个方法，结果会不尽相同。</p>
-<p>我们知道，static关键字可以修饰成员变量和方法，来让它们变成类的所属，而不是对象的所属，比如我们将Person的age属性用static进行修饰，结果会是什么样呢？请看下面的例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Person &#123;</span><br><span class="line">    String name;</span><br><span class="line">    static int age;</span><br><span class="line">    </span><br><span class="line">    /* 其余代码不变... */</span><br><span class="line"></span><br><span class="line">    /**Output</span><br><span class="line">     * Name:zhangsan, Age:12</span><br><span class="line">     * Name:lisi, Age:12</span><br><span class="line">     *///~</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>被ﬁnal修饰的常量名称，一般都有书写规范，所有字母都大写。 </p>
+<h2 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h2><h4 id="四种访问权限"><a href="#四种访问权限" class="headerlink" title="四种访问权限"></a>四种访问权限</h4><ul>
+<li>public：公共的。</li>
+<li>protected：受保护的 </li>
+<li>default：默认的 </li>
+<li>private：私有的</li>
+</ul>
+<h4 id="不同权限的访问能力"><a href="#不同权限的访问能力" class="headerlink" title="不同权限的访问能力"></a>不同权限的访问能力</h4><table>
+<thead>
+<tr>
+<th></th>
+<th>public</th>
+<th>protected</th>
+<th>default（空的）</th>
+<th>private</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>同一类中</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>同一包中(子类与无关类)</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td></td>
+</tr>
+<tr>
+<td>不同包的子类</td>
+<td>√</td>
+<td>√</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>不同包中的无关类</td>
+<td>√</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>可见，public具有最大权限。private则是最小权限。<br>编写代码时，如果没有特殊的考虑，建议这样使用权限：</p>
+<ul>
+<li>成员变量使用 private ，隐藏细节。 </li>
+<li>构造方法使用 public ，方便创建对象。 </li>
+<li>成员方法使用 public ，方便调用方法。 </li>
+<li>不加权限修饰符，其访问能力与default修饰符相同 </li>
+</ul>
+<h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><p>将一个类A定义在另一个类B里面，里面的那个类A就称为内部类，B则称为外部类。 </p>
+<p>成员内部类：定义在类中方法外的类。</p>
+<p>访问特点 </p>
+<ul>
+<li>内部类可以直接访问外部类的成员，包括私有成员。 </li>
+<li>外部类要访问内部类的成员，必须要建立内部类的对象。</li>
+</ul>
+<p>格式：外部类名.内部类名 对象名 = new 外部类型().new 内部类型()；</p>
+<p>★ 内部类仍然是一个独立的类，在编译之后会内部类会被编译成独立的.class文件，但是前面冠以外部类的类名 和$符号 。</p>
+<h4 id="匿名内部类-★★★★★"><a href="#匿名内部类-★★★★★" class="headerlink" title="匿名内部类 ★★★★★"></a>匿名内部类 ★★★★★</h4><p>匿名内部类 ：是内部类的简化写法。它的本质是一个 带具体实现的 父类或者父接口的 匿名的 子类对象。<br>开发中，最常用到的内部类就是匿名内部类了。</p>
+<p>前提：</p>
+<p>匿名内部类必须继承一个父类或者实现一个父接口。 </p>
+<p>格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">new 父类名或者接口名()&#123;     </span><br><span class="line">	// 方法重写     </span><br><span class="line">	@Override      </span><br><span class="line">	public void method() &#123;         </span><br><span class="line">	// 执行语句     </span><br><span class="line">	&#125; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>我们发现，结果发生了一点变化，在给p2的age属性赋值时，干扰了p1的age属性，这是为什么呢？我们还是来看他们在内存中的示意：</p>
-<p><img src="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170129182741362-1771285007.jpg" alt="img"></p>
-<p>我们发现，给age属性加了<strong>static</strong>关键字之后，Person对象就不再拥有age属性了，age属性会统一交给Person类去管理，即多个Person对象只会对应一个age属性，一个对象如果对age属性做了改变，其他的对象都会受到影响。我们看到此时的age和toString()方法一样，都是交由类去管理。</p>
-<p>虽然我们看到static可以让对象共享属性，但是实际中我们很少这么用，也不推荐这么使用。因为这样会让该属性变得难以控制，因为它在任何地方都有可能被改变。如果我们想共享属性，一般我们会采用其他的办法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public class Person &#123;</span><br><span class="line">    private static int count = 0;</span><br><span class="line">    int id;</span><br><span class="line">    String name;</span><br><span class="line">    int age;</span><br><span class="line">    </span><br><span class="line">    public Person() &#123;</span><br><span class="line">        id = ++count;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public String toString() &#123;</span><br><span class="line">        return &quot;Id:&quot; + id + &quot;, Name:&quot; + name + &quot;, Age:&quot; + age;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Person p1 = new Person();</span><br><span class="line">        p1.name = &quot;zhangsan&quot;;</span><br><span class="line">        p1.age = 10;</span><br><span class="line">        Person p2 = new Person();</span><br><span class="line">        p2.name = &quot;lisi&quot;;</span><br><span class="line">        p2.age = 12;</span><br><span class="line">        System.out.println(p1);</span><br><span class="line">        System.out.println(p2);</span><br><span class="line">    &#125;</span><br><span class="line">    /**Output</span><br><span class="line">     * Id:1, Name:zhangsan, Age:10</span><br><span class="line">     * Id:2, Name:lisi, Age:12</span><br><span class="line">     *///~</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用方式：</p>
+<p>以接口为例，匿名内部类的使用，代码如下：<br>定义接口：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public abstract class FlyAble&#123;     </span><br><span class="line">	public abstract void fly(); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>上面的代码起到了给Person的对象创建一个唯一id以及记录总数的作用，其中count由static修饰，是Person类的成员属性，每次创建一个Person对象，就会使该属性自加1然后赋给对象的id属性，这样，count属性记录了创建Person对象的总数，由于count使用了private修饰，所以从类外面无法随意改变。</p>
-<h4 id="修饰成员方法"><a href="#修饰成员方法" class="headerlink" title="修饰成员方法"></a>修饰成员方法</h4><p>static的另一个作用，就是修饰成员方法。相比于修饰成员属性，修饰成员方法对于数据的存储上面并没有多大的变化，因为我们从上面可以看出，方法本来就是存放在类的定义当中的。static修饰成员方法最大的作用，就是可以使用”<strong>类名.方法名</strong>“的方式操作方法，避免了先要new出对象的繁琐和资源消耗，我们可能会经常在帮助类中看到它的使用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public class PrintHelper &#123;</span><br><span class="line"></span><br><span class="line">    public static void print(Object o)&#123;</span><br><span class="line">        System.out.println(o);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        PrintHelper.print(&quot;Hello world&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>创建匿名内部类，并调用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class InnerDemo &#123;     </span><br><span class="line">	public static void main(String[] args) &#123;         </span><br><span class="line">	/*         </span><br><span class="line">	1.等号右边:是匿名内部类，定义并创建该接口的子类对象         </span><br><span class="line">	2.等号左边:是多态赋值,接口类型引用指向子类对象         </span><br><span class="line">	*/         </span><br><span class="line">	FlyAble  f = new FlyAble()&#123;             </span><br><span class="line">		public void fly() &#123;                 </span><br><span class="line">		System.out.println(&quot;我飞了~~~&quot;);             </span><br><span class="line">		&#125;         </span><br><span class="line">	&#125;;           </span><br><span class="line">	//调用 fly方法,执行重写后的方法         </span><br><span class="line">	f.fly();     </span><br><span class="line">	&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<p>上面便是一个例子（现在还不太实用），但是我们可以看到它的作用，使得static修饰的方法成为类的方法，使用时通过“<strong>类名.方法名</strong>”的方式就可以方便的使用了，相当于定义了一个全局的函数（只要导入该类所在的包即可）。不过它也有使用的局限，一个static修饰的类中，不能使用非static修饰的成员变量和方法，这很好理解，因为static修饰的方法是属于类的，如果去直接使用对象的成员变量，它会不知所措（不知该使用哪一个对象的属性）。</p>
-<h4 id="静态块"><a href="#静态块" class="headerlink" title="静态块"></a>静态块</h4><p>在说明static关键字的第三个用法时，我们有必要重新梳理一下一个对象的初始化过程。以下面的代码为例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">package com.dotgua.study;</span><br><span class="line"></span><br><span class="line">class Book&#123;</span><br><span class="line">    public Book(String msg) &#123;</span><br><span class="line">        System.out.println(msg);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Person &#123;</span><br><span class="line"></span><br><span class="line">    Book book1 = new Book(&quot;book1成员变量初始化&quot;);</span><br><span class="line">    static Book book2 = new Book(&quot;static成员book2成员变量初始化&quot;);</span><br><span class="line">    </span><br><span class="line">    public Person(String msg) &#123;</span><br><span class="line">        System.out.println(msg);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    Book book3 = new Book(&quot;book3成员变量初始化&quot;);</span><br><span class="line">    static Book book4 = new Book(&quot;static成员book4成员变量初始化&quot;);</span><br><span class="line">    </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Person p1 = new Person(&quot;p1初始化&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    /**Output</span><br><span class="line">     * static成员book2成员变量初始化</span><br><span class="line">     * static成员book4成员变量初始化</span><br><span class="line">     * book1成员变量初始化</span><br><span class="line">     * book3成员变量初始化</span><br><span class="line">     * p1初始化</span><br><span class="line">     *///~</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>通常在方法的形式参数是接口或者抽象类时，也可以将匿名内部类作为参数传递。代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class InnerDemo2 &#123;     </span><br><span class="line">	public static void main(String[] args) &#123;         </span><br><span class="line">	/*         1.等号右边:定义并创建该接口的子类对象         </span><br><span class="line">				2.等号左边:是多态,接口类型引用指向子类对象       </span><br><span class="line">     */         </span><br><span class="line">     FlyAble  f = new FlyAble()&#123;             </span><br><span class="line">     	public void fly() &#123;                 </span><br><span class="line">     	System.out.println(&quot;我飞了~~~&quot;);             </span><br><span class="line">     	&#125;         </span><br><span class="line">     &#125;;         </span><br><span class="line">     // 将f传递给showFly方法中         </span><br><span class="line">     showFly(f);     </span><br><span class="line">     &#125;     </span><br><span class="line">     public static void showFly(FlyAble f) &#123;         f.fly();     &#125; &#125;</span><br></pre></td></tr></table></figure>
 
-<p>上面的例子中，Person类中组合了四个Book成员变量，两个是普通成员，两个是static修饰的类成员。我们可以看到，当我们new一个Person对象时，static修饰的成员变量首先被初始化，随后是普通成员，最后调用Person类的构造方法完成初始化。也就是说，在创建对象时，static修饰的成员会首先被初始化，而且我们还可以看到，如果有多个static修饰的成员，那么会按照他们的先后位置进行初始化。</p>
-<p>实际上，static修饰的成员的初始化可以更早的进行，请看下面的例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">class Book&#123;</span><br><span class="line">    public Book(String msg) &#123;</span><br><span class="line">        System.out.println(msg);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Person &#123;</span><br><span class="line"></span><br><span class="line">    Book book1 = new Book(&quot;book1成员变量初始化&quot;);</span><br><span class="line">    static Book book2 = new Book(&quot;static成员book2成员变量初始化&quot;);</span><br><span class="line">    </span><br><span class="line">    public Person(String msg) &#123;</span><br><span class="line">        System.out.println(msg);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    Book book3 = new Book(&quot;book3成员变量初始化&quot;);</span><br><span class="line">    static Book book4 = new Book(&quot;static成员book4成员变量初始化&quot;);</span><br><span class="line">    </span><br><span class="line">    public static void funStatic() &#123;</span><br><span class="line">        System.out.println(&quot;static修饰的funStatic方法&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Person.funStatic();</span><br><span class="line">        System.out.println(&quot;****************&quot;);</span><br><span class="line">        Person p1 = new Person(&quot;p1初始化&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    /**Output</span><br><span class="line">     * static成员book2成员变量初始化</span><br><span class="line">     * static成员book4成员变量初始化</span><br><span class="line">     * static修饰的funStatic方法</span><br><span class="line">     * ***************</span><br><span class="line">     * book1成员变量初始化</span><br><span class="line">     * book3成员变量初始化</span><br><span class="line">     * p1初始化</span><br><span class="line">     *///~</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在上面的例子中我们可以发现两个有意思的地方，第一个是当我们没有创建对象，而是通过类去调用类方法时，尽管该方法没有使用到任何的类成员，类成员还是在方法调用之前就初始化了，这说明，当我们第一次去使用一个类时，就会触发该类的成员初始化。第二个是当我们使用了类方法，完成类的成员的初始化后，再new该类的对象时，static修饰的类成员没有再次初始化，这说明，static修饰的类成员，在程序运行过程中，只需要初始化一次即可，不会进行多次的初始化。</p>
-<p>回顾了对象的初始化以后，我们再来看static的第三个作用就非常简单了，那就是当我们初始化static修饰的成员时，可以将他们统一放在一个以static开始，用花括号包裹起来的块状语句中：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">class Book&#123;</span><br><span class="line">    public Book(String msg) &#123;</span><br><span class="line">        System.out.println(msg);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Person &#123;</span><br><span class="line"></span><br><span class="line">    Book book1 = new Book(&quot;book1成员变量初始化&quot;);</span><br><span class="line">    static Book book2;</span><br><span class="line">    </span><br><span class="line">    static &#123;</span><br><span class="line">        book2 = new Book(&quot;static成员book2成员变量初始化&quot;);</span><br><span class="line">        book4 = new Book(&quot;static成员book4成员变量初始化&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public Person(String msg) &#123;</span><br><span class="line">        System.out.println(msg);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    Book book3 = new Book(&quot;book3成员变量初始化&quot;);</span><br><span class="line">    static Book book4;</span><br><span class="line">    </span><br><span class="line">    public static void funStatic() &#123;</span><br><span class="line">        System.out.println(&quot;static修饰的funStatic方法&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Person.funStatic();</span><br><span class="line">        System.out.println(&quot;****************&quot;);</span><br><span class="line">        Person p1 = new Person(&quot;p1初始化&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    /**Output</span><br><span class="line">     * static成员book2成员变量初始化</span><br><span class="line">     * static成员book4成员变量初始化</span><br><span class="line">     * static修饰的funStatic方法</span><br><span class="line">     * ***************</span><br><span class="line">     * book1成员变量初始化</span><br><span class="line">     * book3成员变量初始化</span><br><span class="line">     * p1初始化</span><br><span class="line">     *///~</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们将上一个例子稍微做了一下修改，可以看到，结果没有二致。</p>
-<h4 id="静态导包"><a href="#静态导包" class="headerlink" title="静态导包"></a>静态导包</h4><p>相比于上面的三种用途，第四种用途可能了解的人就比较少了，但是实际上它很简单，而且在调用类方法时会更方便。以上面的“PrintHelper”的例子为例，做一下稍微的变化，即可使用静态导包带给我们的方便：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/* PrintHelper.java文件 */</span><br><span class="line">package com.dotgua.study;</span><br><span class="line"></span><br><span class="line">public class PrintHelper &#123;</span><br><span class="line"></span><br><span class="line">    public static void print(Object o)&#123;</span><br><span class="line">        System.out.println(o);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">/* App.java文件 */</span><br><span class="line"></span><br><span class="line">import static com.dotgua.study.PrintHelper.*;</span><br><span class="line"></span><br><span class="line">public class App </span><br><span class="line">&#123;</span><br><span class="line">    public static void main( String[] args )</span><br><span class="line">    &#123;</span><br><span class="line">        print(&quot;Hello World!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    /**Output</span><br><span class="line">     * Hello World!</span><br><span class="line">     *///~</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的代码来自于两个java文件，其中的PrintHelper很简单，包含了一个用于打印的static方法。而在App.java文件中，我们首先将PrintHelper类导入，这里在导入时，我们使用了static关键字，而且在引入类的最后还加上了<strong>“.*”</strong>，它的作用就是将PrintHelper类中的所有类方法直接导入。不同于非static导入，采用static导入包后，在不与当前类的方法名冲突的情况下，无需使用“<strong>类名.方法名</strong>”的方法去调用类方法了，直接可以采用”<strong>方法名</strong>“去调用类方法，就好像是该类自己的方法一样使用即可。</p>
+<h2 id="引用类型用法总结"><a href="#引用类型用法总结" class="headerlink" title="引用类型用法总结"></a>引用类型用法总结</h2><h4 id="class作为成员变量"><a href="#class作为成员变量" class="headerlink" title="class作为成员变量"></a>class作为成员变量</h4><p>类作为成员变量时，对它进行赋值的操作，实际上，是赋给它该类的一个对象。 </p>
+<h4 id="interface作为成员变量"><a href="#interface作为成员变量" class="headerlink" title="interface作为成员变量"></a>interface作为成员变量</h4><p>我们使用一个接口，作为成员变量，以便随时更换技能，这样的设计更为灵活，增强了程序的扩展性。<br>接口作为成员变量时，对它进行赋值的操作，实际上，是赋给它该接口的一个子类对象。 </p>
+<h4 id="interface作为方法参数和返回值类型"><a href="#interface作为方法参数和返回值类型" class="headerlink" title="interface作为方法参数和返回值类型"></a>interface作为方法参数和返回值类型</h4><p>接口作为参数时，传递它的子类对象。<br>接口作为返回值类型时，返回它的子类对象。 </p>
 
       
 
@@ -289,7 +350,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">关键字</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">特性</a>
         		</li>
       		
 		</ul>
@@ -345,7 +406,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/16/static关键字/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/19/java基础day11/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -359,18 +420,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/01/19/java基础day10/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          接口、多态
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/01/16/java基础day09/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">继承、super、this、抽象类</div>
+    <a href="/2019/01/19/java基础day10/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">接口、多态</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -397,7 +449,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#static关键字的用法与作用"><span class="toc-number">1.</span> <span class="toc-text">static关键字的用法与作用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#四种用法"><span class="toc-number">1.1.</span> <span class="toc-text">四种用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修饰成员变量"><span class="toc-number">1.2.</span> <span class="toc-text">修饰成员变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#修饰成员方法"><span class="toc-number">1.2.1.</span> <span class="toc-text">修饰成员方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#静态块"><span class="toc-number">1.2.2.</span> <span class="toc-text">静态块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#静态导包"><span class="toc-number">1.2.3.</span> <span class="toc-text">静态导包</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#final关键字"><span class="toc-number">1.</span> <span class="toc-text">final关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#概述"><span class="toc-number">1.0.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用方式"><span class="toc-number">1.0.2.</span> <span class="toc-text">使用方式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#权限修饰符"><span class="toc-number">2.</span> <span class="toc-text">权限修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#四种访问权限"><span class="toc-number">2.0.1.</span> <span class="toc-text">四种访问权限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#不同权限的访问能力"><span class="toc-number">2.0.2.</span> <span class="toc-text">不同权限的访问能力</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#内部类"><span class="toc-number">3.</span> <span class="toc-text">内部类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#匿名内部类-★★★★★"><span class="toc-number">3.0.1.</span> <span class="toc-text">匿名内部类 ★★★★★</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用类型用法总结"><span class="toc-number">4.</span> <span class="toc-text">引用类型用法总结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#class作为成员变量"><span class="toc-number">4.0.1.</span> <span class="toc-text">class作为成员变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#interface作为成员变量"><span class="toc-number">4.0.2.</span> <span class="toc-text">interface作为成员变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#interface作为方法参数和返回值类型"><span class="toc-number">4.0.3.</span> <span class="toc-text">interface作为方法参数和返回值类型</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -422,7 +474,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2019/01/16/static关键字/",
+  id: "http://yoursite.com/2019/01/19/java基础day11/",
   owner: 'privateisshit',
   repo: 'privateisshit.github.io',
   oauth: {
